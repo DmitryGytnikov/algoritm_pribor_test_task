@@ -1,0 +1,14 @@
+// @mixin text ($font-weight, $font-size, $line-height, $color) {
+//   // text-transform: uppercase;
+//   font-weight: $font-weight;
+//   font-size: $font-size;
+//   line-height: $line-height;
+//   color: $color;
+// }
+
+/*@include text ();*/
+// ($font-weight, $font-size, $line-height, $color)
+
+@mixin animation {
+  transition: all 0.2s ease;
+}

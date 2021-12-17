@@ -1,0 +1,28 @@
+@import "../../node_modules/normalize.css/normalize";
+
+// Переменные
+@import "variables.scss";
+
+// Миксины
+@import "mixins.scss";
+
+// Медиа-запросы
+@import "media-queries.scss";
+
+// Fonts
+@import "font.scss";
+
+// Global
+@import "global.scss";
+
+/*Скрытые заголовки и скрытые описания ссылок*/
+@import "visually-hidden.scss";
+
+
+// html
+
+// // header container.scss
+
+// // main
+
+// // footer
