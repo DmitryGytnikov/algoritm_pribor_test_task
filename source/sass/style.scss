@@ -417,8 +417,17 @@ ul {
 .header-bottom__item {
   margin-left: 43px;
 
+  @media (max-width: 760px) {
+    text-align: center;
+    margin-left: 0;
+  }
+
   &:nth-child(6) {
     padding-right: 3px;
+
+    @media (max-width: 1320px) {
+      padding-right: 0;
+    }
   }
 
   &:last-child {
@@ -428,12 +437,7 @@ ul {
       display: inline;
     }
   }
-
-  @media (max-width: 760px) {
-    text-align: center;
-  }
 }
-
 
 .header-bottom__link {
   font-weight: 700;

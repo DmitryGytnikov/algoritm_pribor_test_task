@@ -612,16 +612,20 @@ ul {
 
 .header-bottom__item {
   margin-left: 43px; }
+  @media (max-width: 760px) {
+    .header-bottom__item {
+      text-align: center;
+      margin-left: 0; } }
   .header-bottom__item:nth-child(6) {
     padding-right: 3px; }
+    @media (max-width: 1320px) {
+      .header-bottom__item:nth-child(6) {
+        padding-right: 0; } }
   .header-bottom__item:last-child {
     display: none; }
     @media (max-width: 760px) {
       .header-bottom__item:last-child {
         display: inline; } }
-  @media (max-width: 760px) {
-    .header-bottom__item {
-      text-align: center; } }
 
 .header-bottom__link {
   font-weight: 700;
