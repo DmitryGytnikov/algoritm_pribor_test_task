@@ -1221,7 +1221,8 @@ ul {
 
 .checkbox-box {
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  align-self: start; }
 
 .checkbox-box__picture {
   display: block;
@@ -1233,12 +1234,9 @@ ul {
   background-color: #ffffff;
   border: 1px solid #c4c4c4;
   border-radius: 1px;
-  outline: none;
   cursor: pointer;
   transition: all 0.2s ease; }
   .checkbox-box__picture:hover {
-    border-color: #36a3eb; }
-  .checkbox-box__picture:active {
     border-color: #36a3eb; }
 
 .checkbox-box__input:focus + .checkbox-box__picture {
@@ -1246,13 +1244,14 @@ ul {
 
 .checkbox-box__input:checked ~ .checkbox-box__picture::before {
   content: "";
-  top: 2px;
-  left: 2px;
   position: absolute;
   width: 6px;
   height: 6px;
   background: #36a3eb;
-  border-radius: 1px; }
+  border-radius: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .checkbox-box__label {
   display: inline-block;
