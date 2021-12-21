@@ -169,7 +169,7 @@ ul {
 
 .header-top__address {
   color: #000000;
-  padding-left: 18px;
+  padding-left: 19px;
   position: relative;
   transition: all 0.2s ease;
 
@@ -188,7 +188,7 @@ ul {
     background-image: url("../img/svg/address.svg");
     width: 9px;
     height: 12px;
-    left: 0;
+    left: 1px;
     top: 2px;
   }
 }
@@ -262,11 +262,11 @@ ul {
 }
 
 
-.btn {
+.header-top__btn {
   cursor: pointer;
   display: block;
   text-align: center;
-  padding: 21px 60px 19px 60px;
+  padding: 21px 59px 19px 60px;
 
   font-size: 12px;
   line-height: 20px;
@@ -289,10 +289,8 @@ ul {
   &:active {
     background-color: #0999f8;
   }
-}
 
-.header-top__btn {
-  margin-left: calc(8.14%);
+  margin-left: calc(8.17%);
   z-index: 2;
   flex-shrink: 0;
 
@@ -305,7 +303,7 @@ ul {
 .header-bottom {
   border-bottom: 1px solid #e6e6e6;
   position: relative;
-  padding: 30px 0 30px 0;
+  padding: 25px 0 26px 0;
 
   @media (max-width: 979px) {
     padding: 20px 0 20px 0;
@@ -319,10 +317,9 @@ ul {
 }
 
 .header-bottom__logo {
+  padding-top: 5px;
   display: block;
-  width: 246px;
   flex: 0 0 246px;
-  margin-right: 109px;
 
   @include desktop {
     margin-right: 40px;
@@ -397,7 +394,7 @@ ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 -20px;
+  // margin: 0 -20px;
   transition: all 0.5s ease;
 
   @media (max-width: 760px) {
@@ -418,7 +415,11 @@ ul {
 }
 
 .header-bottom__item {
-  padding: 0 21px;
+  margin-left: 43px;
+
+  &:nth-child(6) {
+    padding-right: 3px;
+  }
 
   &:last-child {
     display: none;
@@ -467,7 +468,7 @@ ul {
   height: 2px;
   background-color: #36a3eb;
   right: 0;
-  bottom: -56px;
+  bottom: -54px;
 
   @include desktop {
     bottom: -3px;
@@ -517,7 +518,7 @@ ul {
   background-color: #7f828d;
   width: 5px;
   height: 1px;
-  bottom: 8px;
+  bottom: 9px;
   right: 0;
 }
 
@@ -597,6 +598,12 @@ ul {
 
 .accordion__item:last-child {
   margin-bottom: 40px;
+
+  .temperature__tabs-item {
+    line-height: 20px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 }
 
 .temperature__tabs-item {
@@ -611,7 +618,7 @@ ul {
 
   display: block;
   background: #f4f6f6;
-  padding: 22px 30px 22px 30px;
+  padding: 23px 30px 20px 30px;
 
   transition: all 0.2s ease;
 
@@ -652,10 +659,6 @@ ul {
   padding: 16px 0 16px 0;
   display: none;
 }
-
-// .accordion--active + .accordion__link-list {
-//   display: block;
-// }
 
 .accordion__link {
   font-weight: 700;
@@ -801,7 +804,7 @@ ul {
 .temperature__card-text {
   background: #f4f6f6;
   min-height: 112px;
-  padding: 26px 36px 26px 36px;
+  padding: 23px 36px 26px 35px;
   display: flex;
   align-items: center;
   flex-grow: 1;
@@ -868,7 +871,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 
   @media (max-width: 920px) {
     font-size: 28px;
@@ -902,7 +905,7 @@ ul {
 
 
 .form-feedback__input-box {
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .input-box {
@@ -921,7 +924,7 @@ ul {
   position: relative;
   width: 424px;
   // margin-bottom: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 
   @media (max-width: 480px) {
     width: 100%;
@@ -931,8 +934,8 @@ ul {
     display: block;
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: transparent;
@@ -961,7 +964,7 @@ ul {
 
   width: 100%;
   outline: none;
-  padding: 20px 24px 20px 85px;
+  padding: 21px 24px 19px 83px;
   background-color: #ffffff;
 
   font-size: 14px;
@@ -993,14 +996,14 @@ ul {
 .input-box__tel {
   position: relative;
   width: 424px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 
   &::before {
     display: block;
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: transparent;
@@ -1029,7 +1032,7 @@ ul {
 
   width: 100%;
   outline: none;
-  padding: 20px 24px 20px 85px;
+  padding: 21px 24px 19px 83px;
   background-color: #ffffff;
 
   font-size: 14px;
@@ -1061,14 +1064,14 @@ ul {
 .input-box__email {
   position: relative;
   width: 424px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 
   &::before {
     display: block;
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 1px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: transparent;
@@ -1097,7 +1100,7 @@ ul {
 
   width: 100%;
   outline: none;
-  padding: 20px 24px 20px 85px;
+  padding: 22px 24px 20px 83px;
   background-color: #ffffff;
 
 
@@ -1130,14 +1133,14 @@ ul {
 .input-box__message {
   position: relative;
   width: 424px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 
   &::before {
     display: block;
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 1px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: transparent;
@@ -1167,7 +1170,7 @@ ul {
   width: 100%;
   outline: none;
   resize: none;
-  padding: 20px 24px 20px 85px;
+  padding: 22px 23px 20px 83px;
   background-color: #ffffff;
 
 
@@ -1198,7 +1201,7 @@ ul {
 
 
 .form-feedback__checkbox-box {
-  margin-left: 141px;
+  margin-left: 140px;
 
   @media (max-width: 1320px) {
     margin-left: 0;
@@ -1214,7 +1217,7 @@ ul {
 .checkbox-box__picture {
   display: block;
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 0;
   width: 12px;
   height: 12px;
@@ -1276,10 +1279,43 @@ ul {
   }
 }
 
+.form-feedback__inner {
+  display: flex;
+
+  @media (max-width: 1320px) {
+    display: block;
+  }
+}
 
 .form-feedback__submit-btn {
-  display: inline-block;
-  margin-left: 39px;
+  cursor: pointer;
+  text-align: center;
+  padding: 21px 57px 21px 59px;
+
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #36a3eb;
+  border: none;
+
+  height: 60px;
+
+  transition: all 0.3s ease;
+
+  display: block;
+  margin-left: 42px;
+  margin-top: 2px;
+
+  &:hover {
+    background-color: #0999f8;
+  }
+
+  &:focus,
+  &:active {
+    background-color: #0999f8;
+  }
 
   @media (max-width: 1320px) {
     display: block;
@@ -1291,7 +1327,7 @@ ul {
 // footer-bottom
 
 .footer-bottom {
-  padding: 38px 50px 36px 0;
+  padding: 37px 50px 36px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1340,7 +1376,7 @@ ul {
     height: 1px;
     background-color: #36a3eb;
     right: 0;
-    bottom: 2px;
+    bottom: 4px;
     transition: all 0.2s ease;
   }
 
@@ -1364,9 +1400,8 @@ ul {
   color: #7f828d;
 
   display: flex;
-  align-items: baceline;
 
-  padding-left: 84px;
+  padding-left: 86px;
 
   @media (max-width: 995px) {
     padding-left: 0;
@@ -1381,10 +1416,9 @@ ul {
 .footer-bottom__dev-logo {
   width: 77px;
   height: 24px;
-  display: flex;
-  justify-content: center;
-  margin-left: 8px;
+  margin-left: 9px;
   transition: all 0.2s ease;
+  padding-top: 1px;
 
   &:hover,
   &:active,

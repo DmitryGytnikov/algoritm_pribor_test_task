@@ -30,7 +30,7 @@
               <a class="header-top__mail" href="mailto:algoritm_pribor@mail.ru">algoritm_pribor@mail.ru</a>
             </li>
           </ul>
-          <button class="header-top__btn btn" type="button">Обратная связь</button>
+          <button class="header-top__btn" type="button">Обратная связь</button>
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@
     <section class="temperature">
       <div class="container">
 
-        <h2 class="temperature__title">Температура</h2>
+        <h3 class="temperature__title">Температура</h3>
 
         <div class="temperature__inner">
 
@@ -217,12 +217,12 @@
             </ul>
             <ul id="tab-3" class=" temperature__content-list">
               <li class="temperature__content-item">
-                Content-2
+                Content-3
               </li>
             </ul>
             <ul id="tab-4" class=" temperature__content-list">
               <li class="temperature__content-item">
-                Content-2
+                Content-4
               </li>
             </ul>
           </div>
@@ -238,10 +238,11 @@
 
     <section class="footer-top feedback">
       <div class="container">
+        <h4 class="visually-hidden">Обратная связь</h4>
+
         <div class="feedback__inner">
 
           <div class="feedback__text-block">
-            <h4 class="visually-hidden">Обратная связь</h4>
             <p class="feedback__title">
               Нужна помощь?<br>
               Возникли вопросы?
@@ -269,21 +270,23 @@
                 </div>
               </div>
 
-              <label class="form-feedback__checkbox-box checkbox-box">
-                <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
-                <span class="checkbox-box__picture"></span>
-                <span class="checkbox-box__label">
-                  Я соглашаюсь с
-                  <a class="checkbox-box__link" href="#">
-                    политикой
-                  </a>
-                  <a class="checkbox-box__link" href="#">
-                    обработки персональных данных
-                  </a>
-                </span>
-              </label>
+              <div class="form-feedback__inner">
+                <label class="form-feedback__checkbox-box checkbox-box">
+                  <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
+                  <span class="checkbox-box__picture"></span>
+                  <span class="checkbox-box__label">
+                    Я соглашаюсь с
+                    <a class="checkbox-box__link" href="#">
+                      политикой
+                    </a>
+                    <a class="checkbox-box__link" href="#">
+                      обработки персональных данных
+                    </a>
+                  </span>
+                </label>
 
-              <button class="form-feedback__submit-btn btn" type="submit">Отправить форму</button>
+                <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
+              </div>
 
             </form>
           </div>

@@ -11,6 +11,8 @@ burger.addEventListener(`click`, function (evt) {
 
 $(function () {
 
+  $('.accordion--active').next().slideToggle(2000);
+
   $('.tab').click(function(e) {
 
     e.preventDefault();
@@ -23,6 +25,7 @@ $(function () {
 
   });
 
+
   $('.temperature__tabs-item').click(function(e) {
 
     if($('.accordion').hasClass('accordion--one')) {
@@ -33,7 +36,5 @@ $(function () {
     $(this).toggleClass('accordion--active').next().slideToggle(300);
 
   });
-
-  // $('.temperature__tabs-item')
 
 });
