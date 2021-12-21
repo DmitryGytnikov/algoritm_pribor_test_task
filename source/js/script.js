@@ -8,3 +8,32 @@ burger.addEventListener(`click`, function (evt) {
   burger.classList.toggle(`header-bottom__btn--active`);
   headerBottomMenu.classList.toggle(`header-bottom__list--active`);
 });
+
+$(function () {
+
+  $('.tab').click(function(e) {
+
+    e.preventDefault();
+
+    $($(this).closest('.tabs-wrapper').find('li').find('a')).removeClass('tab--active');
+    $($(this).closest('.tabs-wrapper').siblings().find('ul')).removeClass('tabs-content--active');
+
+    $(this).addClass('tab--active');
+    $($(this).attr('href')).addClass('tabs-content--active');
+
+  });
+
+  $('.temperature__tabs-item').click(function(e) {
+
+    if($('.accordion').hasClass('accordion--one')) {
+      $('.temperature__tabs-item').not($(this)).removeClass('accordion--active');
+      $('.accordion__link-list').not($(this).next()).slideUp(300);
+    }
+
+    $(this).toggleClass('accordion--active').next().slideToggle(300);
+
+  });
+
+  // $('.temperature__tabs-item')
+
+});
