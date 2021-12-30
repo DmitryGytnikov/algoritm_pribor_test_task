@@ -1561,6 +1561,10 @@ ul {
 
 .about-company__menu-item {
   margin-right: 64px;
+
+  &:last-child {
+    padding-left: 2px;
+  }
 }
 
 .about-company__menu-link {
@@ -1918,3 +1922,104 @@ ul {
 }
 
 // advantage.html^^
+
+// vacancies-electronics-уngineer .html
+
+.vacancies {
+  padding-bottom: 84px;
+}
+
+.vacancies__inner {
+  display: grid;
+  grid-template-columns: 335px 1fr 246px;
+}
+
+.vacancies__menu-list {
+  padding-top: 1px;
+}
+
+.vacancies__menu-item {
+  margin-bottom: 30px;
+}
+
+.vacancies__menu-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  padding: 12px 0;
+
+  &:not([href]) {
+    text-decoration-line: underline;
+    color: #36a3eb;
+  }
+}
+
+.vacancies__text-box {
+  padding: 0 109px 0 89px;
+}
+
+.vacancies-textbox {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.vacancies-textbox__description {
+  margin-bottom: 24px;
+}
+
+.vacancies-textbox__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.vacancies-textbox__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.vacancies-textbox__text-item {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-image: url("../img/svg/rhomb.svg");
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.vacancies__response-salary {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 24px;
+}
+
+.vacancies__response-btn {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding: 21px 65px 19px 66px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #36a3eb;
+  border: none;
+  max-height: 60px;
+}
+
+// vacancies-electronics-уngineer.html^^^
