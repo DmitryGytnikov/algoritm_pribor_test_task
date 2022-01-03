@@ -2023,3 +2023,242 @@ ul {
 }
 
 // vacancies-electronics-уngineer.html^^^
+
+
+// useful-information-table-1.html
+
+.useful-information {
+  padding-bottom: 102px;
+}
+
+.useful-information__inner {
+  display: grid;
+  grid-template-columns: 335px 1fr;
+}
+
+.useful-information__menu-list {
+  padding-top: 1px;
+}
+
+.useful-information__menu-item {
+  margin-bottom: 30px;
+}
+
+.useful-information__menu-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  padding: 12px 0;
+
+  &:not([href]) {
+    text-decoration-line: underline;
+    color: #36a3eb;
+  }
+}
+
+.useful-information__table-box {
+  padding-left: 109px;
+  padding-top: 1px;
+}
+
+.information-table {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  border-spacing: 0;
+}
+
+.information-table__tr {
+  height: 61px;
+
+  &:nth-child(2n+1) {
+    background: #f8f8f8;
+  }
+
+  &:first-child {
+    background: #f4f6f6;
+  }
+}
+
+.information-table__th {
+  white-space: nowrap;
+
+  padding-left: 27px;
+  padding-right: 28px;
+
+  &:first-child {
+    padding-left: 20px;
+    padding-right: 34px;
+    text-align: left;
+  }
+}
+
+.information-table__td {
+  font-weight: 500;
+  color: #7e7e7e;
+  white-space: nowrap;
+}
+
+// useful-information-table-1.html^^^
+
+// faq.html
+
+.faq {
+  padding-bottom: 119px;
+}
+
+.faq__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__list {
+  width: 62%;
+}
+
+.faq__item {
+  &:last-child {
+    border-bottom: 1px solid #d6d9d9;
+  }
+}
+
+.faq__accordion-item {
+  cursor: pointer;
+  position: relative;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 23px 91px 27px 0;
+  transition: all 0.2s ease;
+  border-top: 1px solid #d6d9d9;
+}
+
+.faq__accordion-item.accordion--active {
+  color: #36a3eb;
+}
+
+.accordion-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f3f4f4;
+  transition: all 0.2s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: #939393;
+    z-index: 2;
+  }
+
+  &::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &::after {
+    transform: rotate(90deg);
+    top: 50%;
+    left: 16px;
+    right: 0;
+  }
+}
+
+.faq__accordion-item.accordion--active .accordion-btn {
+  background: #36a3eb;
+  opacity: 0.3;
+
+  &::before {
+    background-color: #ffffff;
+    z-index: 3;
+  }
+
+  &::after {
+    background: #36a3eb;
+  }
+}
+
+.faq__accordion-text {
+  display: none;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 36px;
+  padding-top: 9px;
+}
+
+.faq__item:nth-child(5) .faq__accordion-item {
+  padding-bottom: 27px;
+}
+
+.faq__item:nth-child(6) .faq__accordion-item {
+  padding-bottom: 22px;
+}
+
+.faq__item:nth-child(7) .faq__accordion-item {
+  padding-top: 24px;
+}
+
+.faq__feedback {
+  width: 30.286%;
+}
+
+.faq__feedback__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+  margin-bottom: 49px;
+}
+
+.faq__feedback .input-box__name-input {
+  background: #f4f6f6;
+}
+
+.faq__feedback .input-box__tel-input {
+  background: #f4f6f6;
+}
+
+.faq__feedback .input-box__email-input {
+  background: #f4f6f6;
+}
+
+.faq__feedback .input-box__message-input {
+  background: #f4f6f6;
+}
+
+.faq__feedback .form-feedback__input-box {
+  margin-bottom: 26px;
+}
+
+.faq__feedback .form-feedback__inner {
+  display: block;
+}
+
+.faq__feedback .form-feedback__checkbox-box {
+  margin-left: 0;
+  margin-bottom: 26px;
+}
+
+.faq__feedback .checkbox-box__label {
+  display: inline;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.faq__feedback .form-feedback__submit-btn {
+  margin: 0;
+  width: 100%;
+}
+
+// faq.html^^^

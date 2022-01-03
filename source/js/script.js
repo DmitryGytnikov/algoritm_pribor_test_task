@@ -28,9 +28,22 @@ $(function () {
 
   $('.temperature__tabs-item').click(function(e) {
 
-    if($('.accordion').hasClass('accordion--one')) {
+    // if($('.accordion').hasClass('accordion--one')) {
+    if($('.temperature-accordion').hasClass('accordion--one')) {
       $('.temperature__tabs-item').not($(this)).removeClass('accordion--active');
       $('.accordion__link-list').not($(this).next()).slideUp(300);
+    }
+
+    $(this).toggleClass('accordion--active').next().slideToggle(300);
+
+  });
+
+  $('.faq__accordion-item').click(function(e) {
+
+    // if($('.accordion').hasClass('accordion--one')) {
+    if($('.faq-accordion').hasClass('accordion--one')) {
+      $('.faq__accordion-item').not($(this)).removeClass('accordion--active');
+      $('.faq__accordion-text').not($(this).next()).slideUp(300);
     }
 
     $(this).toggleClass('accordion--active').next().slideToggle(300);
