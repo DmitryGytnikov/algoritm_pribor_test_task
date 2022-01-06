@@ -101,7 +101,7 @@
             <a href="#"><span>Покупателям</span></a>
           </li>
           <li class="breadcrumbs__list-item">
-            <a><span>Вопрос-ответ</span></a>
+            <a><span>Опросные листы</span></a>
           </li>
         </ul>
       </div>
@@ -124,110 +124,57 @@
             </a>
           </li>
           <li class="for-buyers__menu-item">
-            <a class="for-buyers__menu-link">
+            <a class="for-buyers__menu-link" href="#" rel="noreferrer">
               Вопрос-ответ
             </a>
           </li>
           <li class="for-buyers__menu-item">
-            <a class="for-buyers__menu-link" href="#" rel="noreferrer">
+            <a class="for-buyers__menu-link">
               Опросные листы
             </a>
           </li>
         </ul>
 
-        <div class="for-buyers__faq faq">
+        <div class="for-buyers__questionnaires questionnaires">
 
-          <h4 class="visually-hidden">Вопрос-ответ</h4>
+          <h4 class="visually-hidden">Опросные листы</h4>
 
-          <div class="faq__inner">
+          <div class="questionnaires__inner">
 
-            <ul class="faq__list faq-accordion accordion--one">
-              <li class="faq__item">
-                <h5 class="faq__accordion-item accordion--active">
-                  Что такое датчик давления?
-                  <span class="accordion-btn"></span>
+            <ul class="questionnaires__list">
+              <li class="questionnaires__item">
+                <h5 class="questionnaires__title questionnaires__title--pdf">
+                  Форма заказа оборудования для измерения температуры
                 </h5>
-                <p class="faq__accordion-text">
-                  Датчики давления — это устройство, измеряющее  давление в различных средах и преобразующее давление среды в электрический, пневматический сигнал или цифровой код.
-                </p>
               </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Существует ли у Вас услуга «Страхование груза»?
-                  <span class="accordion-btn"></span>
+              <li class="questionnaires__item">
+                <h5 class="questionnaires__title questionnaires__title--doc">
+                  Форма заказа оборудования для измерения давления
                 </h5>
-                <p class="faq__accordion-text">
-                  Content-2
-                </p>
               </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Ведете наблюдение за движением груза до Заказчика?
-                  <span class="accordion-btn"></span>
+              <li class="questionnaires__item">
+                <h5 class="questionnaires__title questionnaires__title--pdf">
+                  Форма заказа функционального оборудования
                 </h5>
-                <p class="faq__accordion-text">
-                  Content-3
-                </p>
               </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Что такое PVDF (материал футеровки)?
-                  <span class="accordion-btn"></span>
+              <li class="questionnaires__item">
+                <h5 class="questionnaires__title questionnaires__title--doc">
+                  Форма заказа расходников
                 </h5>
-                <p class="faq__accordion-text">
-                  Content-4
-                </p>
-              </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Что такое PFA (материал футеровки)?
-                  <span class="accordion-btn"></span>
-                </h5>
-                <p class="faq__accordion-text">
-                  Content-5
-                </p>
-              </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Что такое ETFE (материал футеровки)? Можно заказать футеровку для расходомеров воды МПР-380?
-                  <span class="accordion-btn"></span>
-                </h5>
-                <p class="faq__accordion-text">
-                  Content-6
-                </p>
-              </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Что такое ownCloud?
-                  <span class="accordion-btn"></span>
-                </h5>
-                <p class="faq__accordion-text">
-                  Content-7
-                </p>
-              </li>
-              <li class="faq__item">
-                <h5 class="faq__accordion-item">
-                  Какое оборудование МераПрибор чаще всего поставляется в рамках госзакупок?
-                  <span class="accordion-btn"></span>
-                </h5>
-                <p class="faq__accordion-text">
-                  Content-8
-                </p>
               </li>
             </ul>
 
-            <div class="faq__feedback">
-              <h5 class="visually-hidden">Обратная связь</h5>
-
-              <p class="faq__feedback__title">
-                Задайте вопрос
-              </p>
+            <div class="questionnaires__feedback">
+              <h5 class="questionnaires__feedback__title">Общая форма заказа оборудования</h5>
 
               <form class="form-feedback" aria-label="Форма для обратной связи" method="post">
 
                 <div class="form-feedback__input-box input-box">
+                  <div class="input-box__organization">
+                    <input class="input-box__organization-input" aria-label="Организация" type="text" name="organization" placeholder="Организация">
+                  </div>
                   <div class="input-box__name">
-                    <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="ФИО" required>
+                    <input class="input-box__name-input" aria-label="Контактное лицо" type="text" name="contact" placeholder="Контактное лицо" required>
                   </div>
                   <div class="input-box__tel">
                     <input class="input-box__tel-input" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон" required>
@@ -235,8 +182,11 @@
                   <div class="input-box__email">
                     <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
                   </div>
+                  <div class="input-box__city">
+                    <input class="input-box__city-input" aria-label="Город" type="text" name="city" placeholder="Город">
+                  </div>
                   <div class="input-box__message">
-                    <input class="input-box__message-input" aria-label="Вопрос" type="text" name="question" placeholder="Вопрос">
+                    <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Сообщение">
                   </div>
                 </div>
 
@@ -249,10 +199,7 @@
                       <a class="checkbox-box__link" href="#" target="_blank">
                         политикой обработки персональных данных
                       </a>
-<!--                       <a class="checkbox-box__link" href="#" target="_blank">
-                        обработки персональных данных
-                      </a>
- -->                    </span>
+                    </span>
                   </label>
 
                   <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
