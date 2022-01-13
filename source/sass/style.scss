@@ -1429,7 +1429,7 @@ ul {
 // footer-bottom
 
 .footer-bottom {
-  padding: 37px 50px 36px 0;
+  padding: 36px 50px 36px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3201,3 +3201,116 @@ ul {
 }
 
 // main.html^^^
+
+// about.html
+.about-company__about .advantages {
+  padding-bottom: 220px;
+}
+// about.html^^^
+
+// catalog.html
+
+.temperature--catalog {
+  min-height: auto;
+  margin-bottom: 106px;
+}
+
+.temperature__content-link .temperature__card {
+  min-height: 246px;
+}
+
+.temperature__content-link .temperature__card-img {
+  border: none;
+  padding: 0 0 65% 0;
+}
+
+.temperature__content-link .temperature__card-img img {
+  width: 105px;
+  height: 105px;
+  top: 36px;
+  left: 36px;
+}
+
+.temperature__content-link .temperature__card-text {
+  min-height: 86px;
+  padding-top: 18px;
+}
+
+.temperature__content-link .temperature__text-card {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+// catalog.html^^^
+
+
+// catalog-3.html
+
+.producer-list {
+  width: 100%;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 246px));
+  margin-bottom: 80px;
+}
+
+
+.producer-list .temperature__card {
+  min-height: 246px;
+}
+
+.producer-list .temperature__card-img {
+  border: none;
+  padding: 0 0 65% 0;
+}
+
+.producer-list .temperature__card:nth-child(1) img {
+  width: 209px;
+  height: 70px;
+  top: 36px;
+  left: 36px;
+}
+
+.producer-list .temperature__card:nth-child(2) img {
+  width: 48px;
+  height: 70px;
+  top: 36px;
+  left: 36px;
+}
+
+.producer-list .temperature__card:nth-child(3) img {
+  width: 239px;
+  height: 70px;
+  top: 36px;
+  left: 36px;
+}
+
+.producer-list .temperature__card-text {
+  min-height: 86px;
+  padding-top: 18px;
+}
+
+.producer-list .temperature__text-card {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.temperature__content-wr p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.temperature__content-wr h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+
+// catalog-3.html^^^
+

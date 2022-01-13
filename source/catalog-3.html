@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0">
-  <title>Алгоритм Прибор: Продукция</title>
+  <title>Алгоритм Прибор</title>
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/TTNorms-Medium.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/TTNorms-Bold.woff2" as="font" crossorigin>
-  <meta name="description" content="Алгоритм Прибор: Продукция"/>
+  <meta name="description" content="Алгоритм Прибор"/>
 </head>
 
 <body class="page__body">
@@ -39,7 +39,7 @@
     <div class="header-bottom">
       <div class="container">
         <div class="header-bottom__box">
-          <a class="header-bottom__logo" href="main.html" aria-label="На главную страницу" title="На главную">
+          <a class="header-bottom__logo" href="index.html" aria-label="На главную страницу" title="На главную">
             <img src="img/svg/logo.svg" width="246" height="62" alt="Логотип Алгоритм Прибор">
           </a>
           <nav class="header-bottom__menu">
@@ -48,27 +48,27 @@
             </button>
             <ul class="header-bottom__list">
               <li class="header-bottom__item">
-                <a class="header-bottom__link" href="catalog-3.html">
+                <a class="header-bottom__link">
                   Продукция
                 </a>
               </li>
               <li class="header-bottom__item">
-                <a class="header-bottom__link" href="about.html" rel="noreferrer">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
                   О компании
                 </a>
               </li>
               <li class="header-bottom__item">
-                <a class="header-bottom__link" href="questionnaires.html" rel="noreferrer">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
                   Покупателям
                 </a>
               </li>
               <li class="header-bottom__item">
-                <a class="header-bottom__link" href="return_warranty-obligation.html" rel="noreferrer">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
                   Сервис и поддержка
                 </a>
               </li>
               <li class="header-bottom__item">
-                <a class="header-bottom__link" href="delivery_cargo-delivery-russia.html" rel="noreferrer">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
                   Оплата и доставка
                 </a>
               </li>
@@ -114,7 +114,7 @@
     <section class="temperature">
       <div class="container">
 
-        <h3 class="temperature__title">Температура</h3>
+        <h3 class="temperature__title">Датчики температуры (термопреобразователи)</h3>
 
         <div class="temperature__inner">
 
@@ -123,44 +123,44 @@
           <ul class="temperature__tabs temperature-accordion accordion--one tabs-wrapper ">
 
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab tab--active accordion--active" href="#tab-1">Температура</a>
+              <a class="temperature__tabs-item accordion--active" href="#">Температура</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Датчики температуры (термопреобразователи)</a>
+                  <a class="accordion__link tab tab--active" href="#tab_1">Датчики температуры (термопреобразователи)</a>
                 </li>
                 <li>
-                  <a class="accordion__link" href="#">Механические термометры</a>
+                  <a class="accordion__link tab" href="#tab_2">Механические термометры</a>
                 </li>
                 <li>
-                  <a class="accordion__link" href="#">Пирометры</a>
+                  <a class="accordion__link tab" href="#tab_3">Пирометры</a>
                 </li>
                 <li>
-                  <a class="accordion__link" href="#">Арматура для термометров и датчиков температуры</a>
+                  <a class="accordion__link tab" href="#tab_4">Арматура для термометров и датчиков температуры</a>
                 </li>
               </ul>
             </li>
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab" href="#tab-2">Давление</a>
+              <a class="temperature__tabs-item" href="#">Давление</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Link-2</a>
+                  <a class="accordion__link tab" href="#tab_5">Link-2</a>
                 </li>
               </ul>
 
             </li>
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab" href="#tab-3">Расход</a>
+              <a class="temperature__tabs-item" href="#">Расход</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Link-3</a>
+                  <a class="accordion__link tab" href="#tab_6">Link-3</a>
                 </li>
               </ul>
             </li>
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab" href="#tab-4">Функциональная аппаратура</a>
+              <a class="temperature__tabs-item" href="#">Функциональная аппаратура</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Link-4</a>
+                  <a class="accordion__link tab" href="#tab_7">Link-4</a>
                 </li>
               </ul>
             </li>
@@ -168,67 +168,78 @@
           </ul>
 
           <div class="temperature__content">
-            <ul id="tab-1" class=" temperature__content-list tabs-content--active">
-              <li class="temperature__content-item ">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/temperature-sensors-1.png" width="246" height="200" alt="Датчики температуры (термопреобразователи)">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">
-                      Датчики температуры (термопреобразователи)
-                    </span>
-                  </div>
-                </div>
-              </li>
+            <ul id="tab_1" class="temperature__content-list tabs-content--active">
               <li class="temperature__content-item">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/mechanical-thermometers-1.png" width="246" height="200" alt="Механические термометры">
+                <div class="temperature__content-wr">
+                  <div class="producer-list">
+
+                    <div class="temperature__card">
+                      <a class="temperature__link-card" href="#"></a>
+                      <div class="temperature__card-img">
+                        <img src="img/content/manufacturers-1.svg" width="209" height="70" alt="Производитель">
+                      </div>
+                      <div class="temperature__card-text">
+                        <span class="temperature__text-card">WIKA</span>
+                      </div>
+                    </div>
+                    <div class="temperature__card">
+                      <a class="temperature__link-card" href="#"></a>
+                      <div class="temperature__card-img">
+                        <img src="img/content/manufacturers-7.svg" width="48" height="70" alt="Производитель">
+                      </div>
+                      <div class="temperature__card-text">
+                        <span class="temperature__text-card">ИТеК ББмВ</span>
+                      </div>
+                    </div>
+                    <div class="temperature__card">
+                      <a class="temperature__link-card" href="#"></a>
+                      <div class="temperature__card-img">
+                        <img src="img/content/manufacturers-3.svg" width="239" height="70" alt="Производитель">
+                      </div>
+                      <div class="temperature__card-text">
+                        <span class="temperature__text-card">Полоцк Поинт (Термопоинт)</span>
+                      </div>
+                    </div>
+
                   </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">Механические термометры</span>
-                  </div>
-                </div>
-              </li>
-              <li class="temperature__content-item">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/pyrometers-1.png" width="246" height="200" alt="Пирометры">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">Пирометры</span>
-                  </div>
-                </div>
-              </li>
-              <li class="temperature__content-item">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/fittings-for-thermometers-and-temperature-sensors-1.png" width="246" height="200" alt="Арматура для термометров и датчиков температуры">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">Арматура для термометров и датчиков температуры</span>
-                  </div>
+
+                  <p>Основное назначение преобразователей температуры – преобразование сигнала датчиков термопар в выходной токовый сигнал, когда необходимо передать измеренное значение на вторичные приборы. Также их используют в случаях удаленного расположения термопары от вторичного устройства. Этот способ – гарантия надежной и оперативной передачи измерительных данных. Диапазоны измерения конфигурируются.</p>
+                  <p>Контрольно-измерительное оборудование, работающее на микропроцессорах, обладает большими возможностями обработки сигналов, по сравнению с аналоговыми приборами. При их использовании возможно введение новых параметров. В этом случае указывается измеряемый параметр, способ подключения к процессу, пределы измерения, тип сигнала подключения.</p>
+                  <h4>Где купить преобразователь температуры Wika в Воронеже?</h4>
+                  <p>ООО «Алгоритм-Прибор» специализируется на реализации приборов WIKA. Они отличаются точностью, компактностью, способностью функционировать в широком диапазоне температур.</p>
+                  <p>Стоимость устройств зависит от модели, комплектации и некоторых иных особенностей. У нас представлены температурные преобразователи WIKA в двух исполнениях: первое подходит для установки на рейку стандартного типа по DIN EN 50 022-35 или для монтажа непосредственно в соединительную головку термометра.</p>
+
                 </div>
               </li>
             </ul>
-            <ul id="tab-2" class=" temperature__content-list">
+            <ul id="tab_2" class="temperature__content-list">
               <li class="temperature__content-item">
                 Content-2
               </li>
             </ul>
-            <ul id="tab-3" class=" temperature__content-list">
+            <ul id="tab_3" class="temperature__content-list">
               <li class="temperature__content-item">
                 Content-3
               </li>
             </ul>
-            <ul id="tab-4" class=" temperature__content-list">
+            <ul id="tab_4" class="temperature__content-list">
               <li class="temperature__content-item">
                 Content-4
+              </li>
+            </ul>
+            <ul id="tab_5" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-5
+              </li>
+            </ul>
+            <ul id="tab_6" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-6
+              </li>
+            </ul>
+            <ul id="tab_7" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-7
               </li>
             </ul>
           </div>
@@ -237,7 +248,6 @@
 
       </div>
     </section>
-
   </main>
 
   <footer>
@@ -272,7 +282,7 @@
                   <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
                 </div>
                 <div class="input-box__message">
-                  <input class="input-box__message-input" aria-label="Сообщение" type="text" name="Сообщение" placeholder="Сообщение">
+                  <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Сообщение">
                 </div>
               </div>
 
