@@ -1662,7 +1662,7 @@ ul {
 }
 
 .pagination__arrow-previous {
-  margin-right: 14px;
+  margin-right: 13px;
   padding: 14px 19px 12px 19px;
 }
 
@@ -1687,7 +1687,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 26px;
+    // line-height: 26px;
 
     background: #36a3eb;
     color: #ffffff;
@@ -3253,7 +3253,7 @@ ul {
   column-gap: 20px;
   row-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 246px));
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
 
@@ -3262,55 +3262,303 @@ ul {
 }
 
 .producer-list .temperature__card-img {
-  border: none;
-  padding: 0 0 65% 0;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  padding: 0 0 81% 0;
 }
 
 .producer-list .temperature__card:nth-child(1) img {
   width: 209px;
   height: 70px;
-  top: 36px;
-  left: 36px;
+  top: 64px;
+  left: 17px;
 }
 
 .producer-list .temperature__card:nth-child(2) img {
   width: 48px;
   height: 70px;
-  top: 36px;
-  left: 36px;
+  top: 64px;
+  left: 97px;
 }
 
 .producer-list .temperature__card:nth-child(3) img {
   width: 239px;
   height: 70px;
-  top: 36px;
-  left: 36px;
+  top: 64px;
+  left: 2px;
 }
 
 .producer-list .temperature__card-text {
-  min-height: 86px;
-  padding-top: 18px;
+  min-height: 111px;
+  padding-top: 25px;
 }
 
 .producer-list .temperature__text-card {
-  font-size: 18px;
-  line-height: 21px;
   color: #000000;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.temperature__content-wr {
+  margin-bottom: 66px;
 }
 
 .temperature__content-wr p {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
 }
 
 .temperature__content-wr h4 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
+.accordion__link-1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #030303;
+  display: block;
+  background: transparent;
+  padding: 7px 29px 1px 50px;
+  transition: all 0.2s ease;
+}
+
+.temperature__tabs-item-1 {
+  opacity: 0.5;
+}
+
+.temperature__tabs-item-1.accordion--active-1 {
+  color: #36a3eb;
+  opacity: 1;
+}
+
+.accordion__link-list-1 {
+  padding: 1px 0 7px 0;
+  display: none;
+}
+
+.temperature__content--type-of-product .temperature__content-list.tabs-content--active {
+  display: block;
+}
 
 // catalog-3.html^^^
 
+
+// catalog-wika.html
+
+.accordion__link-1.tab--active {
+  text-decoration-line: underline;
+  color: #36a3eb;
+}
+
+.product-list {
+  margin-bottom: 65px;
+  min-height: 800px;
+}
+
+.product-item {
+  padding-top: 20px;
+  padding-bottom: 28px;
+  display: grid;
+  grid-template-columns: 113px 289px 335px 246px;
+  grid-column-gap: 20px;
+
+  background: #ffffff;
+  box-shadow: 0 1px 0 #eeeeee, inset 0 1px 0 #eeeeee;
+
+  & img {
+    width: 113px;
+    align-self: center;
+    margin-top: 8px;
+  }
+}
+
+.product-item__box {
+  padding-left: 25px;
+  margin-top: 4px;
+
+  & p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #7e7e7e;
+    margin-bottom: 8px;
+  }
+
+  & a {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #36a3eb;
+  }
+}
+
+.product-item__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.product-item__btn {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding: 21px 48px 19px 48px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #36a3eb;
+  border: none;
+  min-height: 60px;
+  transition: all 0.3s ease;
+  align-self: center;
+  margin-top: 8px;
+}
+
+.temperature__content--type-of-product .pagination {
+  margin-bottom: 87px;
+}
+
+// catalog-wika.html^^^
+
+
+// contacts.html
+
+.contact__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  margin-bottom: 36px;
+}
+
+.contact__content-text {
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 868px;
+  margin-bottom: 56px;
+
+  & button {
+    display: inline;
+    cursor: pointer;
+    padding: 0 0 8px 0;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 24px;
+    line-height: 36px;
+    text-decoration-line: underline;
+    color: #36a3eb;
+  }
+}
+
+.contact__content .contacts {
+  border-top: none;
+  padding: 0;
+  margin-bottom: 64px;
+}
+
+.contact__content .contacts__inner {
+  justify-content: start;
+  align-items: start;
+}
+
+.contact__content .contacts__item {
+  &:nth-child(1) {
+    margin-right: 3px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 70px;
+  }
+
+  &:nth-child(3) {
+    margin-right: 80px;
+  }
+
+  &:nth-child(4) {
+    margin-right: 76px;
+  }
+
+  &:nth-child(1) p,
+  &:nth-child(2) p {
+    padding-left: 28px;
+  }
+
+  &:nth-child(3) p {
+    padding-left: 33px;
+  }
+
+  &:nth-child(4) p {
+    padding-left: 37px;
+  }
+
+  &:nth-child(5) p {
+    padding-left: 33px;
+  }
+
+  & p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #8d8d8d;
+    margin-bottom: 12px;
+  }
+}
+
+.contact__content .contacts__repository {
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 29px;
+  position: relative;
+  display: block;
+  min-width: 263px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/svg/location-1.svg");
+    width: 13px;
+    height: 16px;
+    left: 1px;
+    top: 5px;
+  }
+}
+
+.contact__content .contacts__address {
+  display: block;
+  margin-right: 0;
+  min-width: 263px;
+
+  &::before {
+    background-image: url("../img/svg/location-2.svg");
+  }
+}
+
+.contact__content .contacts__tel-box {
+  margin-right: 0;
+}
+
+.contact__content .contacts__time {
+  display: block;
+}
+
+.contact__content-map {
+  width: 100%;
+  height: 520px;
+  margin-bottom: 92px;
+}
+
+// contacts.html^^^
+
+
+.temperature__content-list.tabs-content--active-1 {
+  display: block;
+}

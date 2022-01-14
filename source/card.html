@@ -104,6 +104,15 @@
           <li class="breadcrumbs__list-item">
             <a><span>Температура</span></a>
           </li>
+          <li class="breadcrumbs__list-item">
+            <a><span>Датчики температуры (термопреобразователи)</span></a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a><span>WIKA</span></a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a><span>Преобразователь температуры (цифровой)</span></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -111,124 +120,212 @@
     <section class="temperature">
       <div class="container">
 
-        <h3 class="temperature__title">Температура</h3>
+        <h3 class="temperature__title">Преобразователь температуры (цифровой)</h3>
 
         <div class="temperature__inner">
 
-<!--           <ul class="temperature__tabs accordion accordion--one tabs-wrapper ">
- -->
           <ul class="temperature__tabs temperature-accordion accordion--one tabs-wrapper ">
 
             <li class="accordion__item">
-              <a class="temperature__tabs-item accordion--active">Температура</a>
+              <a class="temperature__tabs-item accordion--active" href="#">Температура</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link tab tab--active" href="#tab_1">Датчики температуры (термопреобразователи)</a>
+                  <a class="accordion__link temperature__tabs-item-1 accordion--active-1" href="#">Датчики температуры (термопреобразователи)</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab tab--active" href="#tab__1">WIKA</a>
+                      </li>
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__2">ИТеК ББмВ</a>
+                      </li>
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__3">Полоцк Поинт (Термопоинт)</a>
+                      </li>
+                    </ul>
                 </li>
                 <li>
-                  <a class="accordion__link tab" href="#tab_2">Механические термометры</a>
+                  <a class="accordion__link temperature__tabs-item-1" href="#">Механические термометры</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__4">Link-1(2)</a>
+                      </li>
+                    </ul>
                 </li>
                 <li>
-                  <a class="accordion__link tab" href="#tab_3">Пирометры</a>
+                  <a class="accordion__link temperature__tabs-item-1" href="#">Пирометры</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__5">Link-1(3)</a>
+                      </li>
+                    </ul>
                 </li>
                 <li>
-                  <a class="accordion__link tab" href="#tab_4">Арматура для термометров и датчиков температуры</a>
+                  <a class="accordion__link temperature__tabs-item-1" href="#">Арматура для термометров и датчиков температуры</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__6">Link-1(4)</a>
+                      </li>
+                    </ul>
                 </li>
               </ul>
             </li>
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab" href="#tab-2">Давление</a>
+              <a class="temperature__tabs-item" href="#">Давление</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Link-2</a>
+                  <a class="accordion__link temperature__tabs-item-1" href="#">Link-2</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__7">Link-2(1)</a>
+                      </li>
+                    </ul>
                 </li>
               </ul>
 
             </li>
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab" href="#tab-3">Расход</a>
+              <a class="temperature__tabs-item" href="#">Расход</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Link-3</a>
+                  <a class="accordion__link temperature__tabs-item-1" href="#">Link-3</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__8">Link-3(1)</a>
+                      </li>
+                    </ul>
                 </li>
               </ul>
             </li>
             <li class="accordion__item">
-              <a class="temperature__tabs-item tab" href="#tab-4">Функциональная аппаратура</a>
+              <a class="temperature__tabs-item" href="#">Функциональная аппаратура</a>
               <ul class="accordion__link-list">
                 <li>
-                  <a class="accordion__link" href="#">Link-4</a>
+                  <a class="accordion__link temperature__tabs-item-1" href="#">Link-4</a>
+                    <ul class="accordion__link-list-1">
+                      <li>
+                        <a class="accordion__link-1 tab" href="#tab__9">Link-4(1)</a>
+                      </li>
+                    </ul>
                 </li>
               </ul>
             </li>
 
           </ul>
 
-          <div class="temperature__content">
-            <ul id="tab-1" class=" temperature__content-list tabs-content--active">
+          <div class="temperature__content temperature__content--type-of-product">
+            <ul id="tab__1" class="temperature__content-list tabs-content--active">
               <li class="temperature__content-item">
-                Content-1
+                <div class="card">
+
+                  <div class="card__inner">
+                    <img src="img/content/card-1.png" width="335" height="326" alt="Товар">
+                    <div class="card__box">
+                      <h4>Модель T15</h4>
+                      <p class="card__brend">
+                        Бренд: <span>WIKA</span>
+                      </p>
+                      <p class="card__text">Данный преобразователь температуры разработан для универсальных применений в строительстве промышленных предприятий, машиностроении и обрабатывающей промышленности.</p>
+                      <button class="product-item__btn" type="button">узнать стоимость</button>
+                    </div>
+                  </div>
+
+
+
+
+
+        <div class="card__tab">
+          <ul class="tabs-wrapper-1">
+            <li>
+              <a class="tab-1 tab--active-1" href="#tab--1">Температура</a>
+            </li>
+          <ul class="tabs-wrapper-1">
+            <li>
+              <a class="tab-1" href="#tab--2">Применение</a>
+            </li>
+          <ul class="tabs-wrapper-1">
+            <li>
+              <a class="tab-1" href="#tab--3">Характеристики</a>
+            </li>
+          </ul>
+
+          <div class="temperature__content-wr">
+            <ul id="tab--1" class=" temperature__content-list tabs-content--active-1">
+              <li class="temperature__content-item ">
+                <p>Данный преобразователь температуры разработан для универсальных применений в строительстве промышленных предприятий, машиностроении и обрабатывающей промышленности. Он сочетает в себе высокую точность и превосходную защиту от электромагнитных воздействий. Преобразователь температуры модель Т15 может легко конфигурироваться при помощи программного обеспечения WIKAsoft-TT и программирующего устройства PU-448.</p>
+                <p>Помимо выбора типа датчиков и диапазона измерений программное обеспечение обеспечивает функцию сигнализации, демпфирования и занесения в память нескольких точек измерения. Кроме того, ПО WIKAsoft-TT предлагает функцию записи, когда отображаются температурные данные с датчика, подсоединенного к преобразователю температуры T15.</p>
+                <p>Преобразователь температуры модель T15 также осуществляет такую немаловажную функцию, как контроль целостности цепи подключенного к нему датчика (в соответствии с NAMUR NE89), а также контроль диапазона измерений. Более того, эти преобразователь температуры выполняет циклический начальный тест (так называемое самотестирование).</p>
               </li>
-<!--               <li class="temperature__content-item ">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/temperature-sensors-1.png" width="246" height="200" alt="Датчики температуры (термопреобразователи)">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">
-                      Датчики температуры (термопреобразователи)
-                    </span>
-                  </div>
-                </div>
-              </li>
-              <li class="temperature__content-item">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/mechanical-thermometers-1.png" width="246" height="200" alt="Механические термометры">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">Механические термометры</span>
-                  </div>
-                </div>
-              </li>
-              <li class="temperature__content-item">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/pyrometers-1.png" width="246" height="200" alt="Пирометры">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">Пирометры</span>
-                  </div>
-                </div>
-              </li>
-              <li class="temperature__content-item">
-                <div class="temperature__card">
-                  <a class="temperature__link-card" href="#"></a>
-                  <div class="temperature__card-img">
-                    <img src="img/content/fittings-for-thermometers-and-temperature-sensors-1.png" width="246" height="200" alt="Арматура для термометров и датчиков температуры">
-                  </div>
-                  <div class="temperature__card-text">
-                    <span class="temperature__text-card">Арматура для термометров и датчиков температуры</span>
-                  </div>
-                </div>
-              </li>
- -->            </ul>
-            <ul id="tab_2" class="temperature__content-list">
+            </ul>
+            <ul id="tab--2" class=" temperature__content-list">
               <li class="temperature__content-item">
                 Content-2
               </li>
             </ul>
-            <ul id="tab_3" class="temperature__content-list">
+            <ul id="tab--3" class=" temperature__content-list">
               <li class="temperature__content-item">
                 Content-3
               </li>
             </ul>
-            <ul id="tab_4" class="temperature__content-list">
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+              </li>
+            </ul>
+            <ul id="tab__2" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-2
+              </li>
+            </ul>
+            <ul id="tab__3" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-3
+              </li>
+            </ul>
+            <ul id="tab__4" class="temperature__content-list">
               <li class="temperature__content-item">
                 Content-4
+              </li>
+            </ul>
+            <ul id="tab__5" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-5
+              </li>
+            </ul>
+            <ul id="tab__6" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-6
+              </li>
+            </ul>
+            <ul id="tab__7" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-7
+              </li>
+            </ul>
+            <ul id="tab__8" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-8
+              </li>
+            </ul>
+            <ul id="tab__9" class="temperature__content-list">
+              <li class="temperature__content-item">
+                Content-9
               </li>
             </ul>
           </div>
@@ -237,7 +334,6 @@
 
       </div>
     </section>
-
   </main>
 
   <footer>
