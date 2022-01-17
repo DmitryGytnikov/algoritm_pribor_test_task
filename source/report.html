@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Отчет</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+
+
+  <script type="text/javascript" defer>
+    var Info = {
+      "name": "Алгоритм Прибор",
+      "list": [
+        {
+          "name": "Главная",
+          "time": 5,
+          "ready": 11,
+          "link": "http://dev.design36.ru/algoritm-vrn/main.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Попапы (Frame 2, 3, 8) - 3шт",
+          "time": 2,
+          "ready": 6,
+          "link": "http://dev.design36.ru/algoritm-vrn/main.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Контакты",
+          "time": 5,
+          "ready": 5,
+          "link": "http://dev.design36.ru/algoritm-vrn/contacts.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "О компании - О предприятии",
+          "time": 5,
+          "ready": 1,
+          "link": "http://dev.design36.ru/algoritm-vrn/about.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "О компании - Новости (список)",
+          "time": 3,
+          "ready": 4,
+          "link": "http://dev.design36.ru/algoritm-vrn/news.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "О компании - Новости (карточка)",
+          "time": 2,
+          "ready": 2,
+          "link": "http://dev.design36.ru/algoritm-vrn/new.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "О компании - Преимущества",
+          "time": 3,
+          "ready": 2,
+          "link": "http://dev.design36.ru/algoritm-vrn/advantage.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "О компании - Вакансии",
+          "time": 5,
+          "ready": 4,
+          "link": "http://dev.design36.ru/algoritm-vrn/vacancies-electronics-ingineer.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Покупателям - Сертификаты",
+          "time": 2,
+          "ready": 3,
+          "link": "http://dev.design36.ru/algoritm-vrn/certificates.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Покупателям - Полезная информация",
+          "time": 8,
+          "ready": 4,
+          "link": "http://dev.design36.ru/algoritm-vrn/useful-information-table-1.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Покупателям - Вопрос-ответ",
+          "time": 5,
+          "ready": 5,
+          "link": "http://dev.design36.ru/algoritm-vrn/faq.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Покупателям - Опросные листы",
+          "time": 2,
+          "ready": 5,
+          "link": "http://dev.design36.ru/algoritm-vrn/questionnaires.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Оплата и доставка - Оплата",
+          "time": 2,
+          "ready": 1,
+          "link": "http://dev.design36.ru/algoritm-vrn/payment-how-to-place-an-order.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Оплата и доставка - Доставка",
+          "time": 2,
+          "ready": 1,
+          "link": "http://dev.design36.ru/algoritm-vrn/delivery_cargo-delivery-russia.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Сервис и поддержка - Гарантия",
+          "time": 2,
+          "ready": 0.5,
+          "link": "http://dev.design36.ru/algoritm-vrn/guarantee_warranty-obligation.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Сервис и поддержка - Возврат",
+          "time": 2,
+          "ready": 0.5,
+          "link": "http://dev.design36.ru/algoritm-vrn/return_warranty-obligation.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Продукция - Оглавление",
+          "time": 2,
+          "ready": 4,
+          "link": "http://dev.design36.ru/algoritm-vrn/catalog.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Продукция - Оглавление + Содержание",
+          "time": 8,
+          "ready": 32,
+          "link": "http://dev.design36.ru/algoritm-vrn/catalog-temperatur.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Продукция - Вид товара",
+          "time": 5,
+          "ready": 7,
+          "link": "http://dev.design36.ru/algoritm-vrn/catalog-3.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Продукция - Каталог товаров",
+          "time": 5,
+          "ready": 4,
+          "link": "http://dev.design36.ru/algoritm-vrn/catalog-wika.html",
+		      "is_ready": true,
+        },
+        {
+          "name": "Продукция - Карточка товара",
+          "time": 5,
+          "ready": 5,
+          "link": "http://dev.design36.ru/algoritm-vrn/card.html",
+		      "is_ready": true,
+        },
+      ]
+    };
+
+    $(document).ready(function () {
+      let allTime = 0;
+      let curTime = 0;
+      $('body').append(`
+          <div class="heading">${Info.name}<div/>
+          <div class="times">Готово: <span> <span> </div>
+          <div class="times-ost">Осталось: <span> <span> </div>
+        `)
+      Info.list.forEach(function (item, index) {
+        let imgOk;
+
+        allTime += item.time;
+        curTime += item.ready;
+
+        if (item.is_ready === true) {
+          imgOk = "http://dev.design36.ru/ready.svg"
+        } else {
+          imgOk = "http://dev.design36.ru/no_ready.svg"
+        }
+        let widthLine = item.ready * 100 / item.time;
+        $('body').append(`
+          <div class="item" > 
+            <div class="item-progress" data-width="${widthLine}%"></div>
+            <div class="item-name item-item">
+              ${item.name}
+            </div>
+            <div class="item-time item-item">
+              ${item.ready}/${item.time}
+            </div>
+            <div class="item-link item-item">
+              <a href="${item.link}"> ${item.name}</a>
+            </div>
+            <div class="item-img item-item">
+              <img src="${imgOk}"/>
+            </div>
+          </div>
+        `)
+        $('.times span').html(`${curTime} / ${allTime} | ${Math.floor(curTime * 100 / allTime)} %`)
+        $('.times-ost span').html(`${Math.floor(allTime/8) - Math.floor(curTime/8) } дней ${ Math.floor(allTime%8 - curTime%8 )} часов`)
+
+
+      })
+
+      $('.item-progress').each(function () {
+        $(this).css({
+          width: $(this).data("width")
+        })
+      })
+
+    })
+  </script>
+
+
+  <style>
+    body {
+      background-color: #4b4b4b;
+      color: #fff;
+      font-family: 'Russo One', sans-serif;
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 2px solid #fff;
+    }
+
+    a:hover {
+      border-color: transparent;
+    }
+
+    .heading {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-top: 20px;
+      letter-spacing: 0.04em;
+
+    }
+
+    .times {
+      margin-bottom: 10px;
+      padding-top: 20px;
+      font-size: 28px;
+    }
+    
+    .times-ost {
+      margin-bottom: 40px;
+      padding-top: 20px;
+      font-size: 32px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 15px;
+      background-color: #86f17221;
+
+    }
+
+    .item-item {
+      width: 25%;
+      height: 100%;
+      padding: 15px;
+      font-size: 20px;
+      line-height: 1.5em;
+    }
+
+    .item-img img {
+      width: 40px;
+      height: auto;
+    }
+
+    .item-progress {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(68, 226, 68, 0.568);
+      z-index: -1;
+      transition: 2s;
+      transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+      width: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+</body>
+
+</html>

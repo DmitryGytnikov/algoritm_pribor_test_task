@@ -30,7 +30,8 @@ $(function () {
 
     e.preventDefault();
 
-    $($(this).closest('.tabs-wrapper-1').find('li').find('a')).removeClass('tab--active-1');
+    $($(this).closest('.card__tab').find('li').find('.tab-1')).removeClass('tab--active-1');
+    // $($(this).closest('.tabs-wrapper-1').find('li').find('a')).removeClass('tab--active-1');
     $($(this).closest('.tabs-wrapper-1').siblings().find('ul')).removeClass('tabs-content--active-1');
 
     $(this).addClass('tab--active-1');

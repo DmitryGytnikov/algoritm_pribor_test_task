@@ -21,7 +21,6 @@
         <div class="header-top__box">
           <ul class="header-top__list">
             <li class="header-top__item">
-              <!-- <a class="header-top__address" href="#">Воронеж, ул. Циолковского, д. 8, пом 1/1</a> -->
               <span class="header-top__address">Воронеж, ул. Циолковского, д. 8, пом 1/1</span>
             </li>
             <li class="header-top__item">
@@ -31,7 +30,7 @@
               <a class="header-top__mail" href="mailto:algoritm_pribor@mail.ru">algoritm_pribor@mail.ru</a>
             </li>
           </ul>
-          <button class="header-top__btn" type="button">Обратная связь</button>
+          <a data-fancybox data-src="#popap-feedback" class="header-top__btn" href="">Обратная связь</a>
         </div>
       </div>
     </div>
@@ -102,13 +101,13 @@
             <a href="#"><span>Продукция</span></a>
           </li>
           <li class="breadcrumbs__list-item">
-            <a><span>Температура</span></a>
+            <a href="#"><span>Температура</span></a>
           </li>
           <li class="breadcrumbs__list-item">
-            <a><span>Датчики температуры (термопреобразователи)</span></a>
+            <a href="#"><span>Датчики температуры (термопреобразователи)</span></a>
           </li>
           <li class="breadcrumbs__list-item">
-            <a><span>WIKA</span></a>
+            <a href="#"><span>WIKA</span></a>
           </li>
           <li class="breadcrumbs__list-item">
             <a><span>Преобразователь температуры (цифровой)</span></a>
@@ -212,7 +211,7 @@
 
           </ul>
 
-          <div class="temperature__content temperature__content--type-of-product">
+          <div class="temperature__content temperature__content--type-of-product temperature__content--card">
             <ul id="tab__1" class="temperature__content-list tabs-content--active">
               <li class="temperature__content-item">
                 <div class="card">
@@ -222,69 +221,54 @@
                     <div class="card__box">
                       <h4>Модель T15</h4>
                       <p class="card__brend">
-                        Бренд: <span>WIKA</span>
+                        Бренд: <a href="#">WIKA</a>
                       </p>
                       <p class="card__text">Данный преобразователь температуры разработан для универсальных применений в строительстве промышленных предприятий, машиностроении и обрабатывающей промышленности.</p>
-                      <button class="product-item__btn" type="button">узнать стоимость</button>
+                      <a data-fancybox data-src="#popap-price" class="product-item__btn" href="">Узнать стоимость</a>
+                      <!-- <button class="product-item__btn" type="button">узнать стоимость</button> -->
                     </div>
                   </div>
 
 
+                  <div class="card__tab">
+                    <ul class="tabs-wrapper-1">
+                      <li>
+                        <a class="tab-1 tab--active-1" href="#tab--1">Описание</a>
+                      </li>
+                    </ul>
+                    <ul class="tabs-wrapper-1">
+                      <li>
+                        <a class="tab-1" href="#tab--2">Применение</a>
+                      </li>
+                    </ul>
+                    <ul class="tabs-wrapper-1">
+                      <li>
+                        <a class="tab-1" href="#tab--3">Характеристики</a>
+                      </li>
+                    </ul>
 
-
-
-        <div class="card__tab">
-          <ul class="tabs-wrapper-1">
-            <li>
-              <a class="tab-1 tab--active-1" href="#tab--1">Температура</a>
-            </li>
-          <ul class="tabs-wrapper-1">
-            <li>
-              <a class="tab-1" href="#tab--2">Применение</a>
-            </li>
-          <ul class="tabs-wrapper-1">
-            <li>
-              <a class="tab-1" href="#tab--3">Характеристики</a>
-            </li>
-          </ul>
-
-          <div class="temperature__content-wr">
-            <ul id="tab--1" class=" temperature__content-list tabs-content--active-1">
-              <li class="temperature__content-item ">
-                <p>Данный преобразователь температуры разработан для универсальных применений в строительстве промышленных предприятий, машиностроении и обрабатывающей промышленности. Он сочетает в себе высокую точность и превосходную защиту от электромагнитных воздействий. Преобразователь температуры модель Т15 может легко конфигурироваться при помощи программного обеспечения WIKAsoft-TT и программирующего устройства PU-448.</p>
-                <p>Помимо выбора типа датчиков и диапазона измерений программное обеспечение обеспечивает функцию сигнализации, демпфирования и занесения в память нескольких точек измерения. Кроме того, ПО WIKAsoft-TT предлагает функцию записи, когда отображаются температурные данные с датчика, подсоединенного к преобразователю температуры T15.</p>
-                <p>Преобразователь температуры модель T15 также осуществляет такую немаловажную функцию, как контроль целостности цепи подключенного к нему датчика (в соответствии с NAMUR NE89), а также контроль диапазона измерений. Более того, эти преобразователь температуры выполняет циклический начальный тест (так называемое самотестирование).</p>
-              </li>
-            </ul>
-            <ul id="tab--2" class=" temperature__content-list">
-              <li class="temperature__content-item">
-                Content-2
-              </li>
-            </ul>
-            <ul id="tab--3" class=" temperature__content-list">
-              <li class="temperature__content-item">
-                Content-3
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <div class="temperature__content-wr">
+                      <ul id="tab--1" class=" temperature__content-list tabs-content--active-1">
+                        <li class="temperature__content-item ">
+                          <p>Данный преобразователь температуры разработан для универсальных применений в строительстве промышленных предприятий, машиностроении и обрабатывающей промышленности. Он сочетает в себе высокую точность и превосходную защиту от электромагнитных воздействий. Преобразователь температуры модель Т15 может легко конфигурироваться при помощи программного обеспечения WIKAsoft-TT и программирующего устройства PU-448.</p>
+                          <p>Помимо выбора типа датчиков и диапазона измерений программное обеспечение обеспечивает функцию сигнализации, демпфирования и занесения в память нескольких точек измерения. Кроме того, ПО WIKAsoft-TT предлагает функцию записи, когда отображаются температурные данные с датчика, подсоединенного к преобразователю температуры T15.</p>
+                          <p>Преобразователь температуры модель T15 также осуществляет такую немаловажную функцию, как контроль целостности цепи подключенного к нему датчика (в соответствии с NAMUR NE89), а также контроль диапазона измерений. Более того, эти преобразователь температуры выполняет циклический начальный тест (так называемое самотестирование).</p>
+                        </li>
+                      </ul>
+                      <ul id="tab--2" class=" temperature__content-list">
+                        <li class="temperature__content-item">
+                          Content-2
+                        </li>
+                      </ul>
+                      <ul id="tab--3" class=" temperature__content-list">
+                        <li class="temperature__content-item">
+                          Content-3
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
 
                 </div>
-
-
 
               </li>
             </ul>
@@ -415,7 +399,93 @@
 
   </footer>
 
+  <div class="popap-feedback feedback__form" id="popap-feedback">
+    <h4>Обратная связь</h4>
+    <form class="form-feedback" aria-label="Форма для обратной связи" method="post">
+
+      <div class="form-feedback__input-box input-box">
+        <div class="input-box__name">
+          <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="ФИО" required>
+        </div>
+        <div class="input-box__tel">
+          <input class="input-box__tel-input" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон" required>
+        </div>
+        <div class="input-box__email">
+          <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-box__message">
+          <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Сообщение">
+        </div>
+      </div>
+
+      <div class="form-feedback__inner">
+        <label class="form-feedback__checkbox-box checkbox-box">
+          <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
+          <span class="checkbox-box__picture"></span>
+          <span class="checkbox-box__label">
+            Я соглашаюсь с
+            <a class="checkbox-box__link" href="#" target="_blank">
+              политикой
+            </a>
+            <a class="checkbox-box__link" href="#" target="_blank">
+              обработки персональных данных
+            </a>
+          </span>
+        </label>
+
+        <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
+      </div>
+
+    </form>
+  </div>
+
+
+  <div class="popap-feedback popap-price feedback__form" id="popap-price">
+    <h4>Узнать стоимость</h4>
+    <form class="form-feedback" aria-label="Форма для обратной связи" method="post">
+
+      <div class="form-feedback__input-box input-box">
+        <div class="input-box__name input-box__product-name">
+          <input class="input-box__name-input" aria-label="Наименование товара" type="text" name="product-name" placeholder="Преобразователь температуры (цифровой)" required>
+        </div>
+        <div class="input-box__name">
+          <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="ФИО" required>
+        </div>
+        <div class="input-box__tel">
+          <input class="input-box__tel-input" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон" required>
+        </div>
+        <div class="input-box__email">
+          <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-box__message">
+          <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Комментарий">
+        </div>
+      </div>
+
+      <div class="form-feedback__inner">
+        <label class="form-feedback__checkbox-box checkbox-box">
+          <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
+          <span class="checkbox-box__picture"></span>
+          <span class="checkbox-box__label">
+            Я соглашаюсь с
+            <a class="checkbox-box__link" href="#" target="_blank">
+              политикой
+            </a>
+            <a class="checkbox-box__link" href="#" target="_blank">
+              обработки персональных данных
+            </a>
+          </span>
+        </label>
+
+        <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
+      </div>
+
+    </form>
+  </div>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>

@@ -31,7 +31,7 @@
               <a class="header-top__mail" href="mailto:algoritm_pribor@mail.ru">algoritm_pribor@mail.ru</a>
             </li>
           </ul>
-          <button class="header-top__btn" type="button">Обратная связь</button>
+          <a data-fancybox data-src="#popap-feedback" class="header-top__btn" href="">Обратная связь</a>
         </div>
       </div>
     </div>
@@ -192,7 +192,48 @@
 
   </footer>
 
+  <div class="popap-feedback feedback__form" id="popap-feedback">
+    <h4>Обратная связь</h4>
+    <form class="form-feedback" aria-label="Форма для обратной связи" method="post">
+
+      <div class="form-feedback__input-box input-box">
+        <div class="input-box__name">
+          <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="ФИО" required>
+        </div>
+        <div class="input-box__tel">
+          <input class="input-box__tel-input" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон" required>
+        </div>
+        <div class="input-box__email">
+          <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-box__message">
+          <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Сообщение">
+        </div>
+      </div>
+
+      <div class="form-feedback__inner">
+        <label class="form-feedback__checkbox-box checkbox-box">
+          <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
+          <span class="checkbox-box__picture"></span>
+          <span class="checkbox-box__label">
+            Я соглашаюсь с
+            <a class="checkbox-box__link" href="#" target="_blank">
+              политикой
+            </a>
+            <a class="checkbox-box__link" href="#" target="_blank">
+              обработки персональных данных
+            </a>
+          </span>
+        </label>
+
+        <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
+      </div>
+
+    </form>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/script.js"></script>
 
 </body>
