@@ -94,10 +94,6 @@ ul {
 // header
 .header-top {
   position: relative;
-
-  @media (max-width: 1280px) {
-    /*padding: 20px 0;*/
-  }
 }
 
 .header-top::after {
@@ -125,7 +121,6 @@ ul {
   }
 
   @media (max-width: 760px) {
-    // display: block;
     justify-content: center;
   }
 }
@@ -156,10 +151,6 @@ ul {
     @include desktop {
       padding: 0 15px;
     }
-
-    // @media (max-width: 660px) {
-    //   padding: 0;
-    // }
   }
 
   @include desktop {
@@ -183,15 +174,6 @@ ul {
 
   position: relative;
   transition: all 0.2s ease;
-
-  // &:hover {
-  //   color: #36a3eb;
-  // }
-
-  // &:focus,
-  // &:active {
-  //   color: #36a3eb;
-  // }
 
   &::before {
     content: "";
@@ -242,7 +224,6 @@ ul {
 
 
   position: relative;
-  // z-index: 2;
 
   &::before {
     content: "";
@@ -357,12 +338,10 @@ ul {
     cursor: pointer;
     display: block;
     margin-left: auto;
-    /*width: 40px;*/
     width: 44px;
 
     border: none;
     background-color: transparent;
-    /*padding: 12px 0;*/
     padding: 20px 0;
     padding-left: 4px;
 
@@ -426,7 +405,6 @@ ul {
   }
 
   @media (max-width: 1280px) {
-    // display: none;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -440,6 +418,7 @@ ul {
 
 .header-bottom__list.header-bottom__list--active {
   top: 0;
+  padding-bottom: 20px;
 }
 
 .header-bottom__item {
@@ -457,7 +436,6 @@ ul {
 
   @media (max-width: 1280px) {
     text-align: center;
-    /*margin-left: 0;*/
   }
 
   &:nth-child(6) {
@@ -476,7 +454,7 @@ ul {
     display: none;
 
     @media (max-width: 1280px) {
-      display: inline;
+      display: block;
     }
   }
 }
@@ -503,12 +481,16 @@ ul {
   }
 
   @media (max-width: 1280px) {
-    padding: 10px 0;
-    // display: block;
+    padding-bottom: 13px;
+    padding-top: 10px;
     display: inline-block;
     margin: 0 auto;
     color: #ffffff;
   }
+}
+
+.header-bottom__item:first-child .header-bottom__link {
+  padding-top: 42px;
 }
 
 .header-bottom__link:not([href]) {
@@ -541,10 +523,23 @@ ul {
 .header-top__btn-2 {
   cursor: pointer;
   display: block;
-  background-color: #36a3eb;
   border: none;
+  text-align: center;
+  padding: 21px 59px 19px 60px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #36a3eb;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  min-height: 60px;
+  transition: all 0.3s ease;
 
   margin: 0 auto;
+  margin-bottom: 45px;
+  margin-top: 28px;
+
+  width: 248px;
 }
 
 
@@ -570,7 +565,6 @@ ul {
 .breadcrumbs__list-item {
   display: inline-block;
   padding-right: 8px;
-  // margin-right: 0;
   position: relative;
 }
 
@@ -635,11 +629,6 @@ ul {
 
 .temperature__inner {
   display: flex;
-  // justify-content: space-between;
-
-  // @include desktop {
-  //   justify-content: space-around;
-  // }
 
   @media (max-width: 576px) {
     display: block;
@@ -747,20 +736,11 @@ ul {
 
 .temperature__content {
   flex-grow: 1;
-  // padding: 0 20px;
-  // padding-bottom: 40px;
   padding: 0 0 40px 90px;
 
   @media (max-width: 1440px) {
     padding-left: 20px;
   }
-
-
-  // @media (max-width: 790px) {
-  //   padding-left: 40px;
-  //   padding-right: 40px;
-  //   margin: 0 auto;
-  // }
 
   @media (max-width: 576px) {
     padding-left: 0;
@@ -772,84 +752,16 @@ ul {
 }
 
 .temperature__content-list.tabs-content--active {
-  // width: 1044px;
   width: 100%;
-  // margin: 0 auto;
-  // display: flex;
-  // flex-wrap: wrap;
 
   display: grid;
   column-gap: 20px;
   row-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
-  // @include desktop {
-  //   width: 778px;
-  // }
-
-  // @media (max-width: 1180px) {
-  //   width: 512px;
-  // }
-
-  // @media (max-width: 920px) {
-  //   width: 246px;
-  // }
-
-  // @media (max-width: 360px) {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-}
-
-.temperature__content-item {
-  // width: 246px;
-  // margin-bottom: 40px;
-  // margin-right: 20px;
-
-  // &:nth-child(4n) { //каждый 4ый
-  //   margin-right: 0;
-  // }
-
-  // @include desktop {
-  //   &:nth-child(4n) { //каждый 4ый
-  //     margin-right: 20px;
-  //   }
-
-  //   &:nth-child(3n) { //каждый 3ий
-  //     margin-right: 0;
-  //   }
-  // }
-
-  // @media (max-width: 1180px) {
-  //   &:nth-child(3n) { //каждый 3ий
-  //     margin-right: 20px;
-  //   }
-
-  //   &:nth-child(2n) { //каждый 2ой
-  //     margin-right: 0;
-  //   }
-  // }
-
-  // @media (max-width: 920px) {
-  //   &:nth-child(3n) { //каждый 3ий
-  //     margin-right: 0;
-  //   }
-
-  //   margin-right: 0;
-  // }
-
-  // @media (max-width: 576px) {
-  //   margin-bottom: 20px;
-
-  //   &:last-child {
-  //     margin-bottom: 35px;
-  //   }
-  // }
 }
 
 .temperature__card {
   height: 100%;
-  // width: 100%;
   min-height: 312px;
   display: flex;
   flex-direction: column;
@@ -871,11 +783,7 @@ ul {
 }
 
 .temperature__card-img {
-  // width: 246px;
-  // height: 200px;
   border: 1px solid #e6e6e6;
-  // text-align: center;
-  // z-index: 2;
   overflow: hidden;
   position: relative;
   padding: 0 0 80% 0;
@@ -892,7 +800,6 @@ ul {
 
 
 .temperature__card-img img {
-  // object-fit: contain;
   width: 99%;
   height: 102%;
   position: absolute;
@@ -1053,8 +960,7 @@ ul {
     display: block;
     content: "";
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 17%;
     left: 60px;
     width: 1px;
     height: 34px;
@@ -1121,8 +1027,7 @@ ul {
     display: block;
     content: "";
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 17%;
     left: 60px;
     width: 1px;
     height: 34px;
@@ -1189,8 +1094,7 @@ ul {
     display: block;
     content: "";
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 17%;
     left: 60px;
     width: 1px;
     height: 34px;
@@ -1258,8 +1162,7 @@ ul {
     display: block;
     content: "";
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 17%;
     left: 60px;
     width: 1px;
     height: 34px;
@@ -2974,10 +2877,10 @@ ul {
 
 .manufacturers__list {
   padding-top: 63px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: justify;
 
   & > img {
