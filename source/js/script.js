@@ -1,5 +1,6 @@
 'use strict';
 
+// Буhuth
 let burger = document.querySelector(`.header-bottom__btn`);
 let headerBottomMenu = document.querySelector(`.header-bottom__list`);
 
@@ -11,7 +12,7 @@ burger.addEventListener(`click`, function (evt) {
 
 $(function () {
 
-  $('.accordion--active').next().slideToggle(2000);
+  $('.accordion--active').next().slideToggle(300);
   $('.accordion--active-1').next().slideToggle(0);
 
   $('.tab').click(function(e) {
@@ -72,40 +73,8 @@ $(function () {
 
   });
 
-  // $.fancybox({
-  //   enableEscapeButton: true,
-  // });
-  // Fancybox.bind("[data-fancybox="single".popap-feedback]", {
-  // // Your options go here
-  //   // enableEscapeButton: false,
-  //   Escape: "close",
-  // });
-  // $("a.gallery2").fancybox(
-  //     {
-  //         "padding" : 20,
-  //         "imageScale" : false,
-  //     "zoomOpacity" : false,
-  //     "zoomSpeedIn" : 1000,
-  //     "zoomSpeedOut" : 1000,
-  //     "zoomSpeedChange" : 1000,
-  //     "frameWidth" : 700,
-  //     "frameHeight" : 600,
-  //     "overlayShow" : true,
-  //     "overlayOpacity" : 0.8,
-  //     "hideOnContentClick" :false,
-  //     "centerOnScroll" : false
 
-  //     });
-
-
-  // $(".header-top__btn").fancybox(
-  //     {
-  //      enableEscapeButton : true,
-  //     });
-
-
-
-  // jQuery-плагин для установки курсора в определенной позиции pos:
+  // jQuery-плагин для установки курсора в определенной позиции pos (для mask):
   $.fn.setCursorPosition = function(pos) {
     if ($(this).get(0).setSelectionRange) {
       $(this).get(0).setSelectionRange(pos, pos);
@@ -117,10 +86,15 @@ $(function () {
       range.select();
     }
   };
-  // Решение проблемы с кликом по центру
+  // Решение проблемы с кликом по центру(для mask):
   $('.input-box__tel-input').click(function(){
     $(this).setCursorPosition(3);
     }).mask("+7(999) 999-99-99",{autoclear: false});
-   // $("#center_not_ok").mask("+7(999) 999-9999");
 });
 
+// Закрытие попапа fancybox по Esc
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    $.fancybox.close();
+  }
+});

@@ -19,3 +19,14 @@
     url("../fonts/TTNorms-Bold.woff2") format("woff2"),
     url("../fonts/TTNorms-Bold.woff") format("woff");
 }
+
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("TT Norms Extra Bold"),
+    local("TT-Norms-Extra-Bold"),
+    url("../fonts/TTNorms-ExtraBold.woff2") format("woff2"),
+    url("../fonts/TTNorms-ExtraBold.woff") format("woff");
+}
