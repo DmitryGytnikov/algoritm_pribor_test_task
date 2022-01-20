@@ -19,25 +19,3 @@
     url("../fonts/TTNorms-Bold.woff2") format("woff2"),
     url("../fonts/TTNorms-Bold.woff") format("woff");
 }
-
-@font-face {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Circe Regular"),
-    local("Circe-Regular"),
-    url("../fonts/Circe-Regular.woff2") format("woff2"),
-    url("../fonts/Circe-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local("Circe Bold"),
-    local("Circe-Bold"),
-    url("../fonts/Circe-Bold.woff2") format("woff2"),
-    url("../fonts/Circe-Bold.woff") format("woff");
-}

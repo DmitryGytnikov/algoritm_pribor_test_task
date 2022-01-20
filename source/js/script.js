@@ -72,4 +72,55 @@ $(function () {
 
   });
 
+  // $.fancybox({
+  //   enableEscapeButton: true,
+  // });
+  // Fancybox.bind("[data-fancybox="single".popap-feedback]", {
+  // // Your options go here
+  //   // enableEscapeButton: false,
+  //   Escape: "close",
+  // });
+  // $("a.gallery2").fancybox(
+  //     {
+  //         "padding" : 20,
+  //         "imageScale" : false,
+  //     "zoomOpacity" : false,
+  //     "zoomSpeedIn" : 1000,
+  //     "zoomSpeedOut" : 1000,
+  //     "zoomSpeedChange" : 1000,
+  //     "frameWidth" : 700,
+  //     "frameHeight" : 600,
+  //     "overlayShow" : true,
+  //     "overlayOpacity" : 0.8,
+  //     "hideOnContentClick" :false,
+  //     "centerOnScroll" : false
+
+  //     });
+
+
+  // $(".header-top__btn").fancybox(
+  //     {
+  //      enableEscapeButton : true,
+  //     });
+
+
+
+  // jQuery-плагин для установки курсора в определенной позиции pos:
+  $.fn.setCursorPosition = function(pos) {
+    if ($(this).get(0).setSelectionRange) {
+      $(this).get(0).setSelectionRange(pos, pos);
+    } else if ($(this).get(0).createTextRange) {
+      var range = $(this).get(0).createTextRange();
+      range.collapse(true);
+      range.moveEnd('character', pos);
+      range.moveStart('character', pos);
+      range.select();
+    }
+  };
+  // Решение проблемы с кликом по центру
+  $('.input-box__tel-input').click(function(){
+    $(this).setCursorPosition(3);
+    }).mask("+7(999) 999-99-99",{autoclear: false});
+   // $("#center_not_ok").mask("+7(999) 999-9999");
 });
+
