@@ -426,8 +426,14 @@ ul {
 }
 
 .header-bottom__list.header-bottom__list--active {
-  top: 0;
-  padding-bottom: 20px;
+  @media (max-width: 1280px) {
+    top: 0;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 320px) {
+    padding-bottom: 20px;
+  }
 }
 
 .header-bottom__item {
@@ -619,6 +625,12 @@ ul {
   min-height: 897px;
 }
 
+// .temperature__title-wr {
+//   @media (max-width: 535px) {
+//     overflow-x: scroll;
+//   }
+// }
+
 .temperature__title {
   font-weight: 700;
   font-size: 50px;
@@ -627,7 +639,19 @@ ul {
 
   @media (max-width: 920px) {
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 39px;
+    line-height: 48px;
+    // word-wrap: break-word;
+  }
+
+  @media (max-width: 530px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  @media (max-width: 410px) {
+    font-size: 24px;
+    line-height: 26px;
   }
 
   @media (max-width: 360px) {
@@ -638,13 +662,38 @@ ul {
 .temperature__inner {
   display: flex;
 
+  &.temperature__inner--catalog-wika {
+    @media (max-width: 1260px) {
+      display: block;
+    }
+  }
+
+  &.temperature__inner--catalog-3 {
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+
   @media (max-width: 576px) {
     display: block;
   }
 }
 
+.temperature__inner--catalog-3 {
+  & .temperature__content-list.tabs-content--active {
+    width: 100%;
+  }
+}
+
+.temperature__inner--catalog-wika .temperature__content {
+  @media (max-width: 1260px) {
+    padding-left: 0;
+  }
+}
+
 .temperature__tabs {
   width: 266px;
+  // width: 19%;
   flex-shrink: 0;
 
   @media (max-width: 979px) {
@@ -750,6 +799,17 @@ ul {
     padding-left: 20px;
   }
 
+  @media (max-width: 800px) {
+    &.temperature__content--type-of-product {
+      padding-left: 0;
+      padding-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    padding-left: 10px;
+  }
+
   @media (max-width: 576px) {
     padding-left: 0;
   }
@@ -766,6 +826,24 @@ ul {
   column-gap: 20px;
   row-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  @media (max-width: 790px) {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: 665px) {
+    width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    width: 74%;
+  }
+
+  @media (max-width: 360px) {
+    width: 90%;
+  }
 }
 
 .temperature__card {
@@ -898,11 +976,19 @@ ul {
     line-height: 34px;
     margin-bottom: 10px;
   }
+
+  @media (max-width: 360px) {
+    text-align: center;
+  }
 }
 
 .feedback__subtitle {
   font-size: 18px;
   line-height: 30px;
+
+  @media (max-width: 720px) {
+    margin-bottom: 22px;
+  }
 }
 
 .feedback__form {
@@ -1376,6 +1462,10 @@ ul {
   @media (max-width: 850px) {
     width: 100%;
   }
+
+  @media (max-width: 360px) {
+    text-align: center;
+  }
 }
 
 .footer-bottom__privacy {
@@ -1395,6 +1485,11 @@ ul {
 
   @media (max-width: 850px) {
     margin-top: 16px;
+  }
+
+  @media (max-width: 360px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &::after {
@@ -1439,6 +1534,10 @@ ul {
   @media (max-width: 850px) {
     margin-top: 16px;
     width: 100%;
+  }
+
+  @media (max-width: 360px) {
+    justify-content: center;
   }
 }
 
@@ -1581,6 +1680,17 @@ ul {
 }
 
 
+// body, html {
+//   overflow-x: hidden;
+// }
+
+// .pagination-wr {
+//   width: auto;
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+//   white-space: nowrap;
+// }
+
 .pagination {
   display: flex;
   align-items: center;
@@ -1588,6 +1698,11 @@ ul {
   // font-family: "Circe", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+
+  // @media (max-width: 610px) {
+  //   width: 1000px;
+  //   overflow: auto;
+  // }
 }
 
 .pagination__arrow-start {
@@ -3443,6 +3558,10 @@ ul {
 .temperature--catalog {
   min-height: auto;
   margin-bottom: 106px;
+
+  @media (max-width: 1265px) {
+    margin-bottom: 0;
+  }
 }
 
 .temperature__content-link .temperature__card {
@@ -3452,6 +3571,7 @@ ul {
 .temperature__content-link .temperature__card-img {
   border: none;
   padding: 0 0 65% 0;
+  background: #f4f6f6;
 }
 
 .temperature__content-link .temperature__card-img img {
@@ -3484,6 +3604,16 @@ ul {
   row-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 246px));
   margin-bottom: 76px;
+
+  @media (max-width: 850px) {
+    margin-bottom: 35px;
+  }
+
+  @media (max-width: 532px) {
+    width: 246px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -3532,6 +3662,10 @@ ul {
 
 .temperature__content-wr {
   margin-bottom: 66px;
+
+  @media (max-width: 850px) {
+    margin-bottom: 0;
+  }
 }
 
 .temperature__content-wr p {
@@ -3605,22 +3739,42 @@ ul {
   padding-top: 20px;
   padding-bottom: 28px;
   display: grid;
-  grid-template-columns: 113px 289px 335px 246px;
+  // grid-template-columns: 113px 289px 335px 246px;
+  grid-template-columns: 113px 289px 1fr 246px;
   grid-column-gap: 20px;
 
   background: #ffffff;
   box-shadow: 0 1px 0 #eeeeee, inset 0 1px 0 #eeeeee;
 
+  @media (max-width: 980px) {
+    grid-template-columns: 335px 246px;
+    grid-row-gap: 20px;
+  }
+
+  @media (max-width: 630px) {
+    grid-template-columns: 1fr;
+  }
+
   & img {
     width: 113px;
     align-self: center;
     margin-top: 8px;
+
+    @media (max-width: 360px) {
+      justify-self: center;
+    }
   }
 }
 
 .product-item__box {
   padding-left: 25px;
   margin-top: 4px;
+
+  @media (max-width: 980px) {
+    align-self: center;
+    padding-left: 0;
+    margin-top: 0;
+  }
 
   & p {
     font-size: 14px;
@@ -3997,6 +4151,15 @@ ul {
 
   &.fancybox-content {
     padding: 89px;
+
+    @media (max-width: 1100px) {
+      width: 95%;
+      padding: 10%;
+    }
+
+    @media (max-width: 576px) {
+      padding: 10% 10px 10% 10px;
+    }
   }
 
   & .input-box__name,
@@ -4008,6 +4171,10 @@ ul {
 
   & .form-feedback__submit-btn {
     margin-left: 21px;
+
+    @media (max-width: 1320px) {
+      margin-left: auto;
+    }
   }
 
   & h4 {
@@ -4016,6 +4183,12 @@ ul {
     line-height: 76px;
     margin-bottom: 48px;
     text-align: center;
+
+    @media (max-width: 920px) {
+      font-size: calc(64px * 0.8);
+      line-height: calc(76px * 0.8);
+      margin-bottom: calc(48px * 0.8);
+    }
   }
 }
 
