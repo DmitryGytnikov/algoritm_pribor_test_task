@@ -74,9 +74,10 @@ ul {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 
-  @media (max-width: 760px) {
-    // overflow: hidden; //Запрет скролла при открытом меню
-  }
+  // @media (max-width: 760px) {
+  //   // overflow: hidden; //Запрет скролла при открытом меню
+  // }
+  overflow-x: hidden;
 }
 
 // container
@@ -2298,6 +2299,16 @@ ul {
 .useful-information__table-box {
   padding-top: 1px;
   justify-self: end;
+
+  @media (max-width: 1010px) {
+    overflow-x: scroll;
+  }
+}
+
+.mobile-overflow {
+  @media (max-width: 1010px) {
+    width: 290px;
+  }
 }
 
 .information-table {
@@ -2346,15 +2357,33 @@ ul {
 
 .faq {
   padding-bottom: 119px;
+
+  @media (max-width: 920px) {
+    padding-bottom: 46px;
+  }
 }
 
 .faq__inner {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
 }
 
 .faq__list {
   width: 62%;
+
+  @media (max-width: 920px) {
+    padding-right: 30px;
+  }
+
+  @media (max-width: 700px) {
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 .faq__item {
@@ -2373,6 +2402,16 @@ ul {
   padding: 23px 91px 27px 0;
   transition: all 0.2s ease;
   border-top: 1px solid #d6d9d9;
+
+  @media (max-width: 920px) {
+    font-size: calc(24px * 0.8);
+    line-height: calc(30px * 0.8);
+    padding: 18px 91px 23px 0;
+  }
+
+  @media (max-width: 390px) {
+    padding-right: 55px;
+  }
 
   &:hover {
     color: #36a3eb;
@@ -2442,6 +2481,7 @@ ul {
   line-height: 24px;
   padding-bottom: 36px;
   padding-top: 9px;
+  padding-right: 55px;
 }
 
 .faq__item:nth-child(5) .faq__accordion-item {
@@ -2458,6 +2498,10 @@ ul {
 
 .faq__feedback {
   width: 30.286%;
+
+  @media (max-width: 1000px) {
+    width: 290px;
+  }
 }
 
 .faq__feedback__title {
@@ -2465,6 +2509,12 @@ ul {
   font-size: 36px;
   line-height: 30px;
   margin-bottom: 49px;
+
+  @media (max-width: 920px) {
+    font-size: calc(36px * 0.8);
+    line-height: calc(30px * 0.8);
+    margin-bottom: calc(49px * 0.8);
+  }
 }
 
 .faq__feedback .input-box__name-input {
@@ -2500,6 +2550,11 @@ ul {
   display: inline;
   padding-top: 14px;
   padding-bottom: 14px;
+
+  @media (max-width: 1435px) {
+    display: inline-block;
+    padding-top: 0;
+  }
 }
 
 .faq__feedback .form-feedback__submit-btn {
@@ -2514,6 +2569,18 @@ ul {
 .questionnaires {
   padding-bottom: 176px;
 
+  @media (max-width: 1100px) {
+    padding-bottom: 59px;
+  }
+
+  @media (max-width: 880px) {
+    padding-top: 15px;
+  }
+
+  @media (max-width: 580px) {
+    padding-bottom: 47px;
+  }
+
   & .input-box__organization-input,
   & .input-box__name-input,
   & .input-box__tel-input,
@@ -2527,11 +2594,14 @@ ul {
 .questionnaires__inner {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 580px) {
+    display: block;
+  }
 }
 
 .questionnaires__list {
-  width: 41.5%;
-
+  width: 581px;
   display: grid;
   column-gap: 89px;
   row-gap: 47px;
@@ -2539,6 +2609,20 @@ ul {
   // grid-template-columns: repeat(auto-fit, 246px);
 
   grid-auto-rows: min-content;
+  margin-bottom: 47px;
+
+
+  @media (max-width: 1140px) {
+    width: 50.96%;
+  }
+
+  @media (max-width: 710px) {
+    padding-right: 30px;
+  }
+
+  @media (max-width: 580px) {
+    padding-right: 0;
+  }
 }
 
 .questionnaires__item {
@@ -2576,7 +2660,15 @@ ul {
 }
 
 .questionnaires__feedback {
-  width: 30.286%;
+  width: 424px;
+
+  @media (max-width: 1140px) {
+    width: 37.19%;
+  }
+
+  @media (max-width: 818px) {
+    width: 290px;
+  }
 }
 
 .questionnaires__feedback__title {
@@ -2584,6 +2676,12 @@ ul {
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 49px;
+
+  @media (max-width: 920px) {
+    font-size: calc(36px * 0.8);
+    line-height: calc(40px * 0.8);
+    margin-bottom: calc(49px * 0.8);
+  }
 }
 
 .input-box__organization {
@@ -2731,6 +2829,11 @@ ul {
   display: inline;
   padding-top: 14px;
   padding-bottom: 14px;
+
+  @media (max-width: 1140px) {
+    display: inline-block;
+    padding-top: 0;
+  }
 }
 
 .questionnaires .form-feedback__submit-btn {
@@ -2755,6 +2858,10 @@ ul {
   display: flex;
   align-items: center;
   padding-bottom: 23px;
+
+  @media (max-width: 880px) {
+    padding-bottom: 8px;
+  }
 }
 
 .payment-and-delivery__menu-item {
@@ -2796,20 +2903,44 @@ ul {
 
 .payment {
   padding-bottom: 76px;
+
+  @media (max-width: 1100px) {
+    padding-bottom: 15px;
+  }
 }
 
 .payment__inner {
   display: flex;
+
+  @media (max-width: 650px) {
+    display: block;
+  }
 }
 
 .payment__menu-list {
   width: 23.929%;
   margin-right: 6.357%;
   padding-top: 12px;
+
+  @media (max-width: 1100px) {
+    margin-right: 30px;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 .payment__menu-item {
   margin-bottom: 30px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 13px;
+  }
 }
 
 .payment__menu-link {
@@ -2851,6 +2982,10 @@ ul {
 
   font-size: 14px;
   line-height: 24px;
+
+  @media (max-width: 1100px) {
+    width: auto;
+  }
 }
 
 .payment-textbox__description {
@@ -2900,24 +3035,49 @@ ul {
 
 // payment-how-to-place-an-order.html^^^
 
+
 // delivery_cargo-delivery-russia.html
 
 .delivery {
   padding-bottom: 97px;
+
+  @media (max-width: 1100px) {
+    padding-bottom: 15px;
+  }
 }
 
 .delivery__inner {
   display: flex;
+
+  @media (max-width: 650px) {
+    display: block;
+  }
 }
 
 .delivery__menu-list {
   width: 23.929%;
   margin-right: 6.357%;
   padding-top: 12px;
+
+  @media (max-width: 1100px) {
+    margin-right: 30px;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 .delivery__menu-item {
   margin-bottom: 30px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 13px;
+  }
 }
 
 .delivery__menu-link {
@@ -2927,6 +3087,12 @@ ul {
   color: #000000;
   padding: 12px 0;
   transition: color 0.2s ease;
+
+  & br {
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
 
   &:hover {
     color: #36a3eb;
@@ -2947,6 +3113,10 @@ ul {
   width: 44.357%;
   font-size: 14px;
   line-height: 24px;
+
+  @media (max-width: 1100px) {
+    width: auto;
+  }
 }
 
 .delivery-textbox__text {
@@ -2971,6 +3141,10 @@ ul {
   display: flex;
   align-items: center;
   padding-bottom: 18px;
+
+  @media (max-width: 880px) {
+    padding-bottom: 0;
+  }
 }
 
 .service-and-support__menu-item {
@@ -3012,20 +3186,44 @@ ul {
 
 .service {
   padding-bottom: 103px;
+
+  @media (max-width: 1100px) {
+    padding-bottom: 15px;
+  }
 }
 
 .service__inner {
   display: flex;
+
+  @media (max-width: 650px) {
+    display: block;
+  }
 }
 
 .service__menu-list {
   width: 23.929%;
   margin-right: 6.357%;
   padding-top: 12px;
+
+  @media (max-width: 1100px) {
+    margin-right: 30px;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 .service__menu-item {
   margin-bottom: 30px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 13px;
+  }
 }
 
 .service__menu-link {
@@ -3055,6 +3253,10 @@ ul {
   width: 44.357%;
   font-size: 14px;
   line-height: 24px;
+
+  @media (max-width: 1100px) {
+    width: auto;
+  }
 }
 
 .service-textbox__text {
@@ -3067,20 +3269,44 @@ ul {
 
 .return {
   padding-bottom: 103px;
+
+  @media (max-width: 1100px) {
+    padding-bottom: 15px;
+  }
 }
 
 .return__inner {
   display: flex;
+
+  @media (max-width: 650px) {
+    display: block;
+  }
 }
 
 .return__menu-list {
   width: 23.929%;
   margin-right: 6.357%;
   padding-top: 12px;
+
+  @media (max-width: 1100px) {
+    margin-right: 30px;
+    width: 250px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 45px;
+  }
 }
 
 .return__menu-item {
   margin-bottom: 30px;
+
+  @media (max-width: 650px) {
+    margin-bottom: 13px;
+  }
 }
 
 .return__menu-link {
@@ -3110,6 +3336,10 @@ ul {
   width: 44.357%;
   font-size: 14px;
   line-height: 24px;
+
+  @media (max-width: 1100px) {
+    width: auto;
+  }
 }
 
 .return-textbox__text {
@@ -4381,6 +4611,8 @@ ul {
 //popup^^^
 
 
+//Для адаптива
+
 .temperature__title {
   font-weight: 700;
   font-size: 50px;
@@ -4524,5 +4756,19 @@ ul {
     &::after {
       bottom: 0;
     }
+  }
+}
+
+.checkbox-box__link-1 {
+  @media (max-width: 1435px) {
+    display: none;
+  }
+}
+
+.checkbox-box__link-2 {
+  display: none;
+
+  @media (max-width: 1435px) {
+    display: inline;
   }
 }
