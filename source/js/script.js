@@ -1,6 +1,6 @@
 'use strict';
 
-// Буhuth
+// Бургер
 let burger = document.querySelector(`.header-bottom__btn`);
 let headerBottomMenu = document.querySelector(`.header-bottom__list`);
 
