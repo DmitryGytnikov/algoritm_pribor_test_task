@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+  <title>Алгоритм Прибор</title>
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/TTNorms-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/TTNorms-Bold.woff2" as="font" crossorigin>
+  <meta name="description" content="Алгоритм Прибор"/>
+</head>
+
+<body class="page__body">
+
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__box">
+          <ul class="header-top__list">
+            <li class="header-top__item">
+              <!-- <a class="header-top__address" href="#">Воронеж, ул. Циолковского, д. 8, пом 1/1</a> -->
+              <span class="header-top__address">Воронеж, ул. Циолковского, д. 8, пом 1/1</span>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__tel" href="tel:+74732221211" >+7 (473) 222-12-11</a>
+            </li>
+            <li class="header-top__item">
+              <a class="header-top__mail" href="mailto:algoritm_pribor@mail.ru">algoritm_pribor@mail.ru</a>
+            </li>
+          </ul>
+          <a data-fancybox data-src="#popap-feedback" class="header-top__btn" href="">Обратная связь</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__box">
+          <a class="header-bottom__logo" href="index.html" aria-label="На главную страницу" title="На главную">
+            <img src="img/svg/logo.svg" width="246" height="62" alt="Логотип Алгоритм Прибор">
+          </a>
+          <nav class="header-bottom__menu">
+            <button class="header-bottom__btn">
+              <span></span>
+            </button>
+            <ul class="header-bottom__list">
+              <li class="header-bottom__item">
+                <a class="header-bottom__link">
+                  Продукция
+                </a>
+              </li>
+              <li class="header-bottom__item">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
+                  О компании
+                </a>
+              </li>
+              <li class="header-bottom__item">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
+                  Покупателям
+                </a>
+              </li>
+              <li class="header-bottom__item">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
+                  Сервис и поддержка
+                </a>
+              </li>
+              <li class="header-bottom__item">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
+                  Оплата и доставка
+                </a>
+              </li>
+              <li class="header-bottom__item">
+                <a class="header-bottom__link" href="#" rel="noreferrer">
+                  Контакты
+                </a>
+              </li>
+
+              <li class="header-bottom__item">
+                <a data-fancybox data-src="#popap-feedback" class="header-bottom__link header-top__btn-2" href="">Обратная связь</a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item">
+            <a href="#"><span>Главная</span></a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="#"><span>Продукция</span></a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a><span>Температура</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="temperature">
+      <div class="container">
+
+        <h3 class="temperature__title">Температура</h3>
+
+        <div class="temperature__inner">
+
+          <ul class="temperature__tabs temperature-accordion accordion--one tabs-wrapper ">
+
+            <li class="accordion__item">
+              <a class="temperature__tabs-item tab tab--active accordion--active" href="#tab-1">Температура</a>
+              <ul class="accordion__link-list">
+                <li>
+                  <a class="accordion__link" href="#">Датчики температуры (термопреобразователи)</a>
+                </li>
+                <li>
+                  <a class="accordion__link" href="#">Механические термометры</a>
+                </li>
+                <li>
+                  <a class="accordion__link" href="#">Пирометры</a>
+                </li>
+                <li>
+                  <a class="accordion__link" href="#">Арматура для термометров и датчиков температуры</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion__item">
+              <a class="temperature__tabs-item tab" href="#tab-2">Давление</a>
+              <ul class="accordion__link-list">
+                <li>
+                  <a class="accordion__link" href="#">Link-2</a>
+                </li>
+              </ul>
+
+            </li>
+            <li class="accordion__item">
+              <a class="temperature__tabs-item tab" href="#tab-3">Расход</a>
+              <ul class="accordion__link-list">
+                <li>
+                  <a class="accordion__link" href="#">Link-3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="accordion__item">
+              <a class="temperature__tabs-item tab" href="#tab-4">Функциональная аппаратура</a>
+              <ul class="accordion__link-list">
+                <li>
+                  <a class="accordion__link" href="#">Link-4</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <div class="temperature__content">
+            <ul id="tab-1" class=" temperature__content-list tabs-content--active">
+              <li class="temperature__content-item ">
+                <div class="temperature__card">
+                  <a class="temperature__link-card" href="#"></a>
+                  <div class="temperature__card-img">
+                    <img src="img/content/temperature-sensors-1.png" width="246" height="200" alt="Датчики температуры (термопреобразователи)">
+                  </div>
+                  <div class="temperature__card-text">
+                    <span class="temperature__text-card">
+                      Датчики температуры (термопреобразователи)
+                    </span>
+                  </div>
+                </div>
+              </li>
+              <li class="temperature__content-item">
+                <div class="temperature__card">
+                  <a class="temperature__link-card" href="#"></a>
+                  <div class="temperature__card-img">
+                    <img src="img/content/mechanical-thermometers-1.png" width="246" height="200" alt="Механические термометры">
+                  </div>
+                  <div class="temperature__card-text">
+                    <span class="temperature__text-card">Механические термометры</span>
+                  </div>
+                </div>
+              </li>
+              <li class="temperature__content-item">
+                <div class="temperature__card">
+                  <a class="temperature__link-card" href="#"></a>
+                  <div class="temperature__card-img">
+                    <img src="img/content/pyrometers-1.png" width="246" height="200" alt="Пирометры">
+                  </div>
+                  <div class="temperature__card-text">
+                    <span class="temperature__text-card">Пирометры</span>
+                  </div>
+                </div>
+              </li>
+              <li class="temperature__content-item">
+                <div class="temperature__card">
+                  <a class="temperature__link-card" href="#"></a>
+                  <div class="temperature__card-img">
+                    <img src="img/content/fittings-for-thermometers-and-temperature-sensors-1.png" width="246" height="200" alt="Арматура для термометров и датчиков температуры">
+                  </div>
+                  <div class="temperature__card-text">
+                    <span class="temperature__text-card">Арматура для термометров и датчиков температуры</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul id="tab-2" class=" temperature__content-list">
+              <li class="temperature__content-item">
+                Content-2
+              </li>
+            </ul>
+            <ul id="tab-3" class=" temperature__content-list">
+              <li class="temperature__content-item">
+                Content-3
+              </li>
+            </ul>
+            <ul id="tab-4" class=" temperature__content-list">
+              <li class="temperature__content-item">
+                Content-4
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <section class="footer-top feedback">
+      <div class="container">
+        <h4 class="visually-hidden">Обратная связь</h4>
+
+        <div class="feedback__inner">
+
+          <div class="feedback__text-block">
+            <p class="feedback__title">
+              Нужна помощь?<br>
+              Возникли вопросы?
+            </p>
+            <p class="feedback__subtitle">
+              Наши менеджеры помогут вам подобрать решения и рассчитать их стоимость
+            </p>
+          </div>
+
+          <div class="feedback__form">
+            <form class="form-feedback" aria-label="Форма для обратной связи" method="post">
+
+              <div class="form-feedback__input-box input-box">
+                <div class="input-box__name">
+                  <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="ФИО" required>
+                </div>
+                <div class="input-box__tel">
+                  <input class="input-box__tel-input" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон" required>
+                </div>
+                <div class="input-box__email">
+                  <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="input-box__message">
+                  <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Сообщение">
+                </div>
+              </div>
+
+              <div class="form-feedback__inner">
+                <label class="form-feedback__checkbox-box checkbox-box">
+                  <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
+                  <span class="checkbox-box__picture"></span>
+                  <span class="checkbox-box__label">
+                    Я соглашаюсь с
+                    <a class="checkbox-box__link" href="#" target="_blank">
+                      политикой
+                    </a>
+                    <a class="checkbox-box__link" href="#" target="_blank">
+                      обработки персональных данных
+                    </a>
+                  </span>
+                </label>
+
+                <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="footer-bottom__copyright">
+          © ООО «Алгоритм-Прибор»<br>
+          Все права защищены, 2008-2021
+        </p>
+        <a class="footer-bottom__privacy" href="#">Политика конфиденциальности</a>
+        <p class="footer-bottom__dev">
+          Разработка
+          <a href="https://juno.ru/" class="footer-bottom__dev-logo" target="_blank">
+            <img src="img/svg/logo-dev.svg" width="77" height="24" alt="Логотип Юнона">
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="popap-feedback feedback__form" id="popap-feedback">
+    <h4>Обратная связь</h4>
+    <form class="form-feedback" aria-label="Форма для обратной связи" method="post">
+
+      <div class="form-feedback__input-box input-box">
+        <div class="input-box__name">
+          <input class="input-box__name-input" aria-label="Фамилия, имя, отчество" type="text" name="name" placeholder="ФИО" required>
+        </div>
+        <div class="input-box__tel">
+          <input class="input-box__tel-input" aria-label="Номер телефона" type="tel" name="telephone-number" placeholder="Телефон" required>
+        </div>
+        <div class="input-box__email">
+          <input class="input-box__email-input" aria-label="Адрес почты" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="input-box__message">
+          <input class="input-box__message-input" aria-label="Сообщение" type="text" name="message" placeholder="Сообщение">
+        </div>
+      </div>
+
+      <div class="form-feedback__inner">
+        <label class="form-feedback__checkbox-box checkbox-box">
+          <input class="checkbox-box__input visually-hidden" aria-label="Я соглашаюсь с политикой обработки персональных данных" type="checkbox" name="agree-with-processing" checked>
+          <span class="checkbox-box__picture"></span>
+          <span class="checkbox-box__label">
+            Я соглашаюсь с
+            <a class="checkbox-box__link" href="#" target="_blank">
+              политикой
+            </a>
+            <a class="checkbox-box__link" href="#" target="_blank">
+              обработки персональных данных
+            </a>
+          </span>
+        </label>
+
+        <button class="form-feedback__submit-btn" type="submit">Отправить заявку</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
